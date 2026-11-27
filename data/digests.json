@@ -1,0 +1,960 @@
+[
+  {
+    "articles": [
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[Anthropic 官方] Claude 4 / Opus / Sonnet Prompt 工程最佳实践：XML 边界、解释动机与防过度触发",
+        "source_url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices",
+        "topics": [
+          "Prompt 工程",
+          "RAG 与上下文工程",
+          "Agent 编排与工作流"
+        ],
+        "total_assets": 6,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[Anthropic 官方] Code Execution with MCP：用代码执行与沙箱过滤重构高效 Agent",
+        "source_url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+        "topics": [
+          "MCP 与工具集成",
+          "选型架构与咨询 ROI",
+          "Agent 编排与工作流"
+        ],
+        "total_assets": 6,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[Anthropic 官方] Contextual Retrieval 工业级 RAG 实践：上下文增强切片、BM25 混合检索与 Rerank 精排",
+        "source_url": "https://www.anthropic.com/news/contextual-retrieval",
+        "topics": [
+          "RAG 与上下文工程",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 6,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[Anthropic 官方] Demystifying Evals for AI Agents & Claude Code 团队验证栈实践",
+        "source_url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+        "topics": [
+          "Eval 评测与可靠性"
+        ],
+        "total_assets": 6,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[Anthropic 官方课程] Prompt 工程核心技法：输出格式化、Prefill 引导、分步思考（CoT）与抑制幻觉",
+        "source_url": "https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial#intermediate-advanced",
+        "topics": [
+          "Prompt 工程",
+          "RAG 与上下文工程"
+        ],
+        "total_assets": 6,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[Google Cloud 官方] 企业级 GenAI / RAG 生产架构、Token 与 GPU TCO 成本算账及安全合规指南",
+        "source_url": "https://cloud.google.com/architecture/rag-capable-gen-ai-app-using-vertex-ai",
+        "topics": [
+          "选型架构与咨询 ROI",
+          "RAG 与上下文工程"
+        ],
+        "total_assets": 6,
+        "vendor": "Google / Gemini",
+        "vendor_id": "google"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[Google 官方] Agent Development Kit (ADK)：确定性工作流编排、Session/State/Memory 三层状态与回调护栏架构",
+        "source_url": "https://google.github.io/adk-docs/",
+        "topics": [
+          "Agent 编排与工作流",
+          "RAG 与上下文工程",
+          "Eval 评测与可靠性"
+        ],
+        "total_assets": 6,
+        "vendor": "Google / Gemini",
+        "vendor_id": "google"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[Google 官方] Gemini API Grounding 联网接地：动态检索阈值、groundingMetadata 溯源核验与成本控制",
+        "source_url": "https://ai.google.dev/gemini-api/docs/google-search",
+        "topics": [
+          "RAG 与上下文工程",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 6,
+        "vendor": "Google / Gemini",
+        "vendor_id": "google"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[Google 官方] Gemini API Long Context 与 Context Caching：百万上下文共享预算、隐式/显式缓存与成本延迟优化",
+        "source_url": "https://ai.google.dev/gemini-api/docs/caching",
+        "topics": [
+          "RAG 与上下文工程",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 6,
+        "vendor": "Google / Gemini",
+        "vendor_id": "google"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[Google 官方指南] Vertex AI Prompt Design 入门与核心策略：提示词构成、Zero-Shot/Few-Shot、系统指令与迭代优化",
+        "source_url": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies",
+        "topics": [
+          "Prompt 工程"
+        ],
+        "total_assets": 6,
+        "vendor": "Google / Gemini",
+        "vendor_id": "google"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[Google 官方指南] Vertex AI Structured Output 结构化输出入门：JSON Schema 约束与可控生成实践",
+        "source_url": "https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output",
+        "topics": [
+          "Prompt 工程",
+          "Eval 评测与可靠性",
+          "Agent 编排与工作流"
+        ],
+        "total_assets": 6,
+        "vendor": "Google / Gemini",
+        "vendor_id": "google"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[Google 官方指南] Vertex AI Text Embeddings 文本向量化入门：Task Types 任务类型、语义相似度与检索基础",
+        "source_url": "https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings",
+        "topics": [
+          "RAG 与上下文工程",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 6,
+        "vendor": "Google / Gemini",
+        "vendor_id": "google"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[OpenAI 官方] GPT-5 与推理模型 Prompting 指南：指令层级、推理强度控制、消除矛盾与 Tool Preambles",
+        "source_url": "https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide",
+        "topics": [
+          "Prompt 工程",
+          "Agent 编排与工作流",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 6,
+        "vendor": "OpenAI / GPT",
+        "vendor_id": "openai"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[OpenAI 官方] Harness Engineering：0 行手写代码交付百万行生产系统的 Agent-First 工程实践",
+        "source_url": "https://openai.com/index/harness-engineering/",
+        "topics": [
+          "Agent 编排与工作流",
+          "RAG 与上下文工程"
+        ],
+        "total_assets": 6,
+        "vendor": "OpenAI / GPT",
+        "vendor_id": "openai"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[OpenAI 官方] LLM 生产环境稳定性、延迟优化与降级风控最佳实践（Rate Limits / Retries / Fallback / Guardrails）",
+        "source_url": "https://platform.openai.com/docs/guides/production-best-practices",
+        "topics": [
+          "Eval 评测与可靠性",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 6,
+        "vendor": "OpenAI / GPT",
+        "vendor_id": "openai"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[OpenAI 官方] Unrolling the Codex Agent Loop：智能体循环、Prompt Caching、自动压缩与沙箱架构剖析",
+        "source_url": "https://openai.com/index/unrolling-the-codex-agent-loop/",
+        "topics": [
+          "RAG 与上下文工程",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 6,
+        "vendor": "OpenAI / GPT",
+        "vendor_id": "openai"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[OpenAI 官方指南] Function Calling 工具调用入门：工具 Schema 定义、Strict 严格模式与完整调用闭环",
+        "source_url": "https://platform.openai.com/docs/guides/function-calling",
+        "topics": [
+          "MCP 与工具集成",
+          "Prompt 工程",
+          "Agent 编排与工作流"
+        ],
+        "total_assets": 6,
+        "vendor": "OpenAI / GPT",
+        "vendor_id": "openai"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[OpenAI 官方指南] OpenAI Agents SDK 入门：多 Agent Handoffs 任务交接、路由委派与输入过滤",
+        "source_url": "https://openai.github.io/openai-agents-python/handoffs/",
+        "topics": [
+          "Agent 编排与工作流",
+          "RAG 与上下文工程"
+        ],
+        "total_assets": 6,
+        "vendor": "OpenAI / GPT",
+        "vendor_id": "openai"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[OpenAI 官方指南] Vector Embeddings 向量嵌入基础：语义检索、余弦相似度、分块与 RAG 入门原理",
+        "source_url": "https://platform.openai.com/docs/guides/embeddings",
+        "topics": [
+          "RAG 与上下文工程",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 6,
+        "vendor": "OpenAI / GPT",
+        "vendor_id": "openai"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "Anthropic Agent 4 层记忆架构与 Dreaming 离线整理机制深度拆解",
+        "source_url": "https://share.gemini.google/uAkdRjEe89aT#agent-memory-dreaming",
+        "topics": [
+          "RAG 与上下文工程",
+          "Agent 编排与工作流"
+        ],
+        "total_assets": 6,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "Anthropic AI Agent 架构最佳实践：主循环 vs Subagent 取舍、渐进式披露与 ACI 工具设计",
+        "source_url": "https://share.gemini.google/uAkdRjEe89aT#agent-architecture",
+        "topics": [
+          "Agent 编排与工作流",
+          "MCP 与工具集成"
+        ],
+        "total_assets": 6,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 1,
+          "questions": 2
+        },
+        "source_title": "[Anthropic 官方课程] Claude API 入门基础：Messages 对话格式、模型选型与采样参数（Temperature / Top-P / Max Tokens）",
+        "source_url": "https://github.com/anthropics/courses/tree/master/anthropic_api_fundamentals",
+        "topics": [
+          "Prompt 工程",
+          "选型架构与咨询 ROI",
+          "Eval 评测与可靠性"
+        ],
+        "total_assets": 5,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 1,
+          "questions": 2
+        },
+        "source_title": "[Anthropic 官方课程] Prompt 评测入门（Evaluations 101）：评测生命周期与代码/模型/人工三类评分器",
+        "source_url": "https://github.com/anthropics/courses/tree/master/prompt_evaluations",
+        "topics": [
+          "Eval 评测与可靠性"
+        ],
+        "total_assets": 5,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 1,
+          "questions": 2
+        },
+        "source_title": "[Anthropic 官方课程] Tool Use 工具调用入门全流程：工具定义、强制 JSON 输出、执行闭环与 tool_choice 策略",
+        "source_url": "https://github.com/anthropics/courses/tree/master/tool_use",
+        "topics": [
+          "MCP 与工具集成",
+          "Prompt 工程",
+          "Agent 编排与工作流"
+        ],
+        "total_assets": 5,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 1
+        },
+        "source_title": "[OpenAI 官方指南] Model Optimization 优化飞轮：Prompt 工程、Evals 评测与 Fine-Tuning 微调选型路径",
+        "source_url": "https://platform.openai.com/docs/guides/model-optimization",
+        "topics": [
+          "Eval 评测与可靠性",
+          "Prompt 工程",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 5,
+        "vendor": "OpenAI / GPT",
+        "vendor_id": "openai"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 1,
+          "questions": 2
+        },
+        "source_title": "[OpenAI 官方指南] Prompt Engineering 入门基础：Responses API、消息角色层级与通用/推理模型提示策略",
+        "source_url": "https://platform.openai.com/docs/guides/prompt-engineering",
+        "topics": [
+          "Prompt 工程",
+          "Agent 编排与工作流"
+        ],
+        "total_assets": 5,
+        "vendor": "OpenAI / GPT",
+        "vendor_id": "openai"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 1,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "[OpenAI 官方指南] Working with Evals 评测入门：数据集构建、自动化 Grader 评分器与迭代测试流程",
+        "source_url": "https://platform.openai.com/docs/guides/evals",
+        "topics": [
+          "Eval 评测与可靠性",
+          "Prompt 工程"
+        ],
+        "total_assets": 5,
+        "vendor": "OpenAI / GPT",
+        "vendor_id": "openai"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 1,
+          "prompts": 1,
+          "questions": 2
+        },
+        "source_title": "[Google 官方指南] ADK Agents 架构基础入门：LLM Agent、确定性 Workflow Agent 与 Custom Agent 选型指南",
+        "source_url": "https://google.github.io/adk-docs/agents/",
+        "topics": [
+          "Agent 编排与工作流",
+          "MCP 与工具集成"
+        ],
+        "total_assets": 4,
+        "vendor": "Google / Gemini",
+        "vendor_id": "google"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 1,
+          "prompts": 1,
+          "questions": 2
+        },
+        "source_title": "Claude Code（CLAUDE.md / MEMORY.md）与自建 Agent 记忆系统落地技巧与 5 大避坑清单",
+        "source_url": "https://share.gemini.google/uAkdRjEe89aT#claude-md-pitfalls",
+        "topics": [
+          "RAG 与上下文工程",
+          "Agent 编排与工作流"
+        ],
+        "total_assets": 4,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 0,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "Gen AI evaluation service overview | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "source_url": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview",
+        "topics": [
+          "Eval 评测与可靠性",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 4,
+        "vendor": "Google / Gemini",
+        "vendor_id": "google"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 1,
+          "prompts": 0,
+          "questions": 2
+        },
+        "source_title": "[Anthropic 官方课程] Prompt 工程入门基础：提示词结构、清晰直接指令与 XML 数据/指令隔离",
+        "source_url": "https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial",
+        "topics": [
+          "Prompt 工程"
+        ],
+        "total_assets": 3,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 0,
+          "prompts": 1,
+          "questions": 2
+        },
+        "source_title": "[Google 官方指南] Vertex AI RAG Engine 架构入门：文档摄取、分块、向量索引、检索与增强生成全链路",
+        "source_url": "https://cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/rag-overview",
+        "topics": [
+          "RAG 与上下文工程",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 3,
+        "vendor": "Google / Gemini",
+        "vendor_id": "google"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 0,
+          "prompts": 0,
+          "questions": 2
+        },
+        "source_title": "[Google 官方教程] 大语言模型基础入门（ML Crash Course）：Token、Transformer 注意力机制、预训练与微调",
+        "source_url": "https://developers.google.com/machine-learning/crash-course/llm",
+        "topics": [
+          "RAG 与上下文工程",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 2,
+        "vendor": "Google / Gemini",
+        "vendor_id": "google"
+      },
+      {
+        "counts": {
+          "diagrams": 1,
+          "pitfalls": 0,
+          "prompts": 0,
+          "questions": 0
+        },
+        "source_title": "[Google Cloud 官方] 企业级 GenAI / RAG 生产架构与跨厂稳定性/成本监控闭环",
+        "source_url": "https://cloud.google.com/architecture/rag-capable-gen-ai-app-using-vertex-ai",
+        "topics": [
+          "RAG 与上下文工程"
+        ],
+        "total_assets": 1,
+        "vendor": "Google / Gemini",
+        "vendor_id": "google"
+      },
+      {
+        "counts": {
+          "diagrams": 1,
+          "pitfalls": 0,
+          "prompts": 0,
+          "questions": 0
+        },
+        "source_title": "Anthropic & OpenAI 官方工程分享综合架构图",
+        "source_url": "https://openai.com/index/unrolling-the-codex-agent-loop/",
+        "topics": [
+          "Agent 编排与工作流"
+        ],
+        "total_assets": 1,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 1,
+          "pitfalls": 0,
+          "prompts": 0,
+          "questions": 0
+        },
+        "source_title": "Anthropic《The components of agent memory》& 共享对话整理",
+        "source_url": "https://share.gemini.google/uAkdRjEe89aT#agent-memory-dreaming",
+        "topics": [
+          "RAG 与上下文工程"
+        ],
+        "total_assets": 1,
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "Architecture overview - Model Context Protocol",
+        "source_url": "https://modelcontextprotocol.io/docs/learn/architecture",
+        "topics": [
+          "MCP 与工具集成"
+        ],
+        "total_assets": 6,
+        "vendor": "前沿研究者 & 社区",
+        "vendor_id": "community"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "Graph Engineering: build 1000+ agent loops in one window, from one prompt",
+        "source_url": "https://x.com/0xcodila/status/2079597821511020996",
+        "topics": [
+          "Agent 编排与工作流",
+          "选型架构与咨询 ROI",
+          "Eval 评测与可靠性"
+        ],
+        "total_assets": 6,
+        "vendor": "前沿研究者 & 社区",
+        "vendor_id": "community"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "Prompt engineering · Hugging Face",
+        "source_url": "https://huggingface.co/docs/transformers/main/en/tasks/prompting",
+        "topics": [
+          "Prompt 工程",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 6,
+        "vendor": "前沿研究者 & 社区",
+        "vendor_id": "community"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "Reward Hacking in Reinforcement Learning",
+        "source_url": "https://lilianweng.github.io/posts/2024-11-28-reward-hacking/",
+        "topics": [
+          "Eval 评测与可靠性",
+          "选型架构与咨询 ROI",
+          "Prompt 工程"
+        ],
+        "total_assets": 6,
+        "vendor": "前沿研究者 & 社区",
+        "vendor_id": "community"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "What are agents? 🤔 · Hugging Face",
+        "source_url": "https://huggingface.co/docs/smolagents/conceptual_guides/intro_agents",
+        "topics": [
+          "选型架构与咨询 ROI",
+          "Agent 编排与工作流"
+        ],
+        "total_assets": 6,
+        "vendor": "前沿研究者 & 社区",
+        "vendor_id": "community"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 1,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
+        "source_url": "https://arxiv.org/abs/2611.33093v1",
+        "topics": [
+          "Eval 评测与可靠性",
+          "Agent 编排与工作流"
+        ],
+        "total_assets": 5,
+        "vendor": "arXiv 前沿论文",
+        "vendor_id": "arxiv"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 2,
+          "prompts": 0,
+          "questions": 2
+        },
+        "source_title": "Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance",
+        "source_url": "https://arxiv.org/abs/2611.33098v1",
+        "topics": [
+          "Agent 编排与工作流",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 4,
+        "vendor": "arXiv 前沿论文",
+        "vendor_id": "arxiv"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 0,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "GPT 6.2 Astra Solves a Historical Mystery",
+        "source_url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+        "topics": [
+          "Agent 编排与工作流",
+          "选型架构与咨询 ROI"
+        ],
+        "total_assets": 4,
+        "vendor": "前沿研究者 & 社区",
+        "vendor_id": "community"
+      },
+      {
+        "counts": {
+          "diagrams": 0,
+          "pitfalls": 0,
+          "prompts": 2,
+          "questions": 2
+        },
+        "source_title": "Three LLM inflection points in twelve months",
+        "source_url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+        "topics": [
+          "Agent 编排与工作流",
+          "选型架构与咨询 ROI",
+          "Eval 评测与可靠性"
+        ],
+        "total_assets": 4,
+        "vendor": "前沿研究者 & 社区",
+        "vendor_id": "community"
+      }
+    ],
+    "counts": {
+      "articles": 45,
+      "diagrams": 3,
+      "pitfalls": 69,
+      "prompts": 71,
+      "questions": 83,
+      "total_assets": 226
+    },
+    "date_range": "2026-11-23 ~ 2026-11-29",
+    "display_range": "2026.11.23 – 11.29",
+    "editor_note": "",
+    "featured_diagrams": [
+      {
+        "id": "d-anthropic-memory-dreaming",
+        "subtitle": "支持自动播放 5 阶段流动动画、步进切换，以及点击任意节点查看架构红线与实测案例",
+        "title": "Anthropic Agent 4 层记忆架构与 Dreaming 离线整理循环",
+        "topic": "RAG 与上下文工程",
+        "vendor": "Anthropic / Claude"
+      },
+      {
+        "id": "d-claude-vs-openai-harness",
+        "subtitle": "融合 Anthropic（MCP 代码执行 + 多层验证栈）与 OpenAI（Harness 护栏 + 精确前缀缓存 + 自动压缩）的生产级闭环对照",
+        "title": "Claude Code vs OpenAI Codex：Agent Harness、MCP 代码执行与 Prompt Cache 闭环",
+        "topic": "Agent 编排与工作流",
+        "vendor": "Anthropic / Claude"
+      },
+      {
+        "id": "d-enterprise-rag-agent-production-loop",
+        "subtitle": "融合 Google Cloud / Gemini（Context Caching · ADK · Grounding）、Anthropic（Contextual Hybrid RAG）与 OpenAI（限流退避 · 级联降级 · Batch）的全链路生产闭环",
+        "title": "企业级 RAG + Agent 生产架构与降级/成本监控闭环",
+        "topic": "RAG 与上下文工程",
+        "vendor": "Google / Gemini"
+      }
+    ],
+    "featured_pitfall": {
+      "id": "k-eee7d0eb",
+      "title": "超复杂业务 Schema 直传 response_schema 触发 400 阻断与隐性 Token 挤占"
+    },
+    "featured_pitfall_id": "k-eee7d0eb",
+    "featured_prompt": {
+      "id": "p-77579502",
+      "title": "推理模型无矛盾 Developer 指令与快慢路径模板"
+    },
+    "featured_prompt_id": "p-77579502",
+    "generated_at": "2026-11-27T13:01:47+00:00",
+    "headline": "第 1 期 · Anthropic × OpenAI 工程实践精粹：商业选型与成本 ROI、多 Agent 与图编排、Evals 与多层验证栈",
+    "id": "digest-2026-W48",
+    "issue_label": "第 1 期",
+    "must_practice_questions": [
+      {
+        "difficulty": "L3",
+        "id": "q-fca8bd9a",
+        "key_points": [
+          "解析限流响应头区分突发限流与 TPM 打满，优先遵守 Retry-After 并采用有界指数退避加随机 Jitter，设置最大重试次数与总超时上限防止惊群效应。",
+          "严格隔离瞬态可重试错误（429/5xx/网络抖动）与不可重试错误（401 鉴权失败、账单配额触顶、400 参数非法），后者快速失败并触发告警。",
+          "构建两层降级防线：模型梯队级联降级（旗舰模型 -> Mini/Flash 模型）与业务层优雅降级（缓存命中兜底、非实时任务入异步队列、友好降级提示）。"
+        ],
+        "scenario_preview": "你的团队正在将一款面向企业客服与文档分析的 LLM 应用推向高并发生产环境。上线初期高峰时段频繁触发上游 API 的 429 Too Many Requests（受限于组织与项目维度的 RPM/TPM 配额），且并发客户端同步重试导致雪崩，核心链路直接向前端抛出 500 报错。作为主责架构师，你会如何在网关层设计限流…",
+        "title": "高并发 LLM 网关的限流退避、错误隔离与多级降级架构设计",
+        "topic": "Eval 评测与可靠性",
+        "track_label": "工程落地",
+        "vendor": "OpenAI / GPT",
+        "vendor_id": "openai"
+      },
+      {
+        "difficulty": "L3",
+        "id": "q-e9981b9a",
+        "key_points": [
+          "识别代际迁移陷阱：激进兜底措辞与复杂嵌套 XML 会诱发新一代 Claude 的 Overtriggering 与过度思考循环",
+          "治理触发边界：删除模糊兜底指令与 ALL-CAPS 噪音，改写为清晰的条件触发边界与快速通道准则",
+          "解释动机与少样本校准：用“Explain the Why”替代死板禁令，并配合 3~5 个贴近真实边缘情况的 <example> 示范统一边界判断"
+        ],
+        "scenario_preview": "某团队将线上工具调用 Agent 从早期大模型迁移到新一代 Claude 4（启用了自适应 Extended Thinking）后，沿用了原 Prompt 中“CRITICAL: If in doubt, ALWAYS call tool X”等全大写强命令及复杂嵌套结构。上线后发现，大量简单咨询也触发了冗余工具调用…",
+        "title": "大模型代际迁移下的 Overtriggering 与过度思考治理",
+        "topic": "Prompt 工程",
+        "track_label": "工程落地",
+        "vendor": "Anthropic / Claude",
+        "vendor_id": "anthropic"
+      },
+      {
+        "difficulty": "L3",
+        "id": "q-cfcb8069",
+        "key_points": [
+          "能准确拆解自建 GPU 的真实月度 TCO 公式：包含双副本高可用硬件成本（如双卡 H100 约 $5,100/月）与 MLOps 运维人力（$1,500~$2,000/月），起步基线约 $6,500~$7,500/月",
+          "指出“100% 满载幻觉”，明确潮汐流量下生产 GPU 真实平均利用率通常仅为 25%~40%，直接拉高有效单 Token 成本",
+          "清晰区分两条盈亏平衡线：对比旗舰闭源 API（约 $15~$20/百万 Token）平衡点在 8,000 万~1.5 亿 Tokens/月，而对比 Serverless 开源托管 API（$0.20~$0.60/百万输出 Token）平衡点高达 100 亿~360 亿输出 Tokens/月"
+        ],
+        "scenario_preview": "某大型制造企业计划将内部研发问答与质检报告生成系统投入生产，目前月均 Token 消耗约 6,000 万（存在明显的白天工作高峰与夜间/周末低谷），主要使用顶级闭源旗舰 API。客户 IT 总监在立项评审会上提出：“为了长期省钱，我们干脆一次性采购或长租两张 H100 做私有化开源模型部署，把 API 费用彻底砍掉。…",
+        "title": "企业大模型立项 TCO 算账：闭源托管 API vs 私有化 H100 集群的盈亏平衡决策",
+        "topic": "选型架构与咨询 ROI",
+        "track_label": "工程 + 咨询双修",
+        "vendor": "Google / Gemini",
+        "vendor_id": "google"
+      }
+    ],
+    "summary": "本周共精读收录 45 篇高密度信源，整理沉淀 226 条结构化资产（83 题 / 71 套提示词 / 69 条避坑 / 3 张交互图解），精选以下 Top 3 趋势、必刷 3 题与 1 坑 1 词供周末 30 分钟高效内化。",
+    "top_trends": [
+      {
+        "asset_count": 99,
+        "insight": "本期共沉淀 99 条相关资产，代表实践《高合规场景下 MCP 选型与 ROI 权衡：代码执行模式、PII 令牌化与沙箱治理咨询方案》：具备架构选型与 ROI 判断力：区分传统 Tool Calling 与 Code Execution with MCP 的适用边界，明确“多工具接入、大体积中间结果、多步组合循环”场景才最具 98.7% Token 削减与降延迟…",
+        "lead_source_url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+        "lead_title": "高合规场景下 MCP 选型与 ROI 权衡：代码执行模式、PII 令牌化与沙箱治理咨询方案",
+        "rank": 1,
+        "related_ids": [
+          "q-f7855bb0",
+          "q-ec8bc5b6",
+          "q-dc5c7412",
+          "q-cfcb8069"
+        ],
+        "tag": "商业选型与成本 ROI",
+        "vendors": [
+          "前沿研究者 & 社区",
+          "Anthropic / Claude",
+          "OpenAI / GPT"
+        ]
+      },
+      {
+        "asset_count": 46,
+        "insight": "本期共沉淀 46 条相关资产，代表实践《高并发代码审计与迁移场景下的多 Agent 图编排防自确认与防写冲突架构设计》：用“编排脚本即代码（Coordination is code）”替代对话接力，中间产物保存在脚本变量中，仅将最终汇总结果回传主会话，避免上下文窗口爆炸。",
+        "lead_source_url": "https://x.com/0xcodila/status/2079597821511020996",
+        "lead_title": "高并发代码审计与迁移场景下的多 Agent 图编排防自确认与防写冲突架构设计",
+        "rank": 2,
+        "related_ids": [
+          "q-5c047124",
+          "q-461cfcbb",
+          "q-41367975",
+          "q-3ad1af36"
+        ],
+        "tag": "多 Agent 与图编排",
+        "vendors": [
+          "前沿研究者 & 社区",
+          "Anthropic / Claude",
+          "Google / Gemini"
+        ]
+      },
+      {
+        "asset_count": 43,
+        "insight": "本期共沉淀 43 条相关资产，代表实践《基于 Adaptive Rubrics 的生成式 AI 单元测试化评测体系重构》：核心范式转换：将 Adaptive rubrics 类比为软件工程的单元测试，通过“准则生成（Rubric generation）+ 逐项验证（Rubric validation）”两步机制，把主观黑盒打分转化为可解释的 Pas…",
+        "lead_source_url": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview",
+        "lead_title": "基于 Adaptive Rubrics 的生成式 AI 单元测试化评测体系重构",
+        "rank": 3,
+        "related_ids": [
+          "q-f6f4a371",
+          "q-d838f6c2",
+          "q-c7754634",
+          "q-6b37583e"
+        ],
+        "tag": "Evals 与多层验证栈",
+        "vendors": [
+          "前沿研究者 & 社区",
+          "Anthropic / Claude",
+          "Google / Gemini"
+        ]
+      }
+    ],
+    "vendor_breakdown": [
+      {
+        "count": 66,
+        "id": "anthropic",
+        "label": "Anthropic / Claude"
+      },
+      {
+        "count": 57,
+        "id": "openai",
+        "label": "OpenAI / GPT"
+      },
+      {
+        "count": 56,
+        "id": "google",
+        "label": "Google / Gemini"
+      },
+      {
+        "count": 38,
+        "id": "community",
+        "label": "前沿研究者 & 社区"
+      },
+      {
+        "count": 9,
+        "id": "arxiv",
+        "label": "arXiv 前沿论文"
+      }
+    ],
+    "week_key": "2026-W48",
+    "week_slug": "2026W48",
+    "year": "2026"
+  }
+]

@@ -1,0 +1,1257 @@
+{
+  "analytics": {
+    "repo_url": "https://github.com/atcXiGua/ai-frontier-forge",
+    "site_url": "https://atcxigua.github.io/ai-frontier-forge/",
+    "umami_script_url": "https://cloud.umami.is/script.js",
+    "umami_website_id": "",
+    "vercount_enabled": true
+  },
+  "articles": [
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-ec77434d",
+      "level": "L2",
+      "source_title": "Architecture overview - Model Context Protocol",
+      "source_url": "https://modelcontextprotocol.io/docs/learn/architecture",
+      "sub_tags": [
+        "MCP 与 ACI 工具设计",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "MCP 与工具集成"
+      ],
+      "total_assets": 6,
+      "vendor": "前沿研究者 & 社区",
+      "vendor_id": "community",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-22e984e9",
+      "level": "L2",
+      "source_title": "Prompt engineering · Hugging Face",
+      "source_url": "https://huggingface.co/docs/transformers/main/en/tasks/prompting",
+      "sub_tags": [
+        "推理模型与现代 Prompt",
+        "商业选型与成本 ROI",
+        "Prompt Cache 与压缩"
+      ],
+      "topics": [
+        "Prompt 工程",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 6,
+      "vendor": "前沿研究者 & 社区",
+      "vendor_id": "community",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-3375fe0e",
+      "level": "L2",
+      "source_title": "What are agents? 🤔 · Hugging Face",
+      "source_url": "https://huggingface.co/docs/smolagents/conceptual_guides/intro_agents",
+      "sub_tags": [
+        "商业选型与成本 ROI",
+        "多 Agent 与图编排"
+      ],
+      "topics": [
+        "选型架构与咨询 ROI",
+        "Agent 编排与工作流"
+      ],
+      "total_assets": 6,
+      "vendor": "前沿研究者 & 社区",
+      "vendor_id": "community",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-8d7b7e6b",
+      "level": "L2",
+      "source_title": "[Anthropic 官方课程] Prompt 工程核心技法：输出格式化、Prefill 引导、分步思考（CoT）与抑制幻觉",
+      "source_url": "https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial#intermediate-advanced",
+      "sub_tags": [
+        "推理模型与现代 Prompt",
+        "商业选型与成本 ROI",
+        "工业 RAG 与混合检索",
+        "Prompt Cache 与压缩"
+      ],
+      "topics": [
+        "Prompt 工程",
+        "RAG 与上下文工程"
+      ],
+      "total_assets": 6,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-a8e870f1",
+      "level": "L2",
+      "source_title": "[Google 官方指南] Vertex AI Text Embeddings 文本向量化入门：Task Types 任务类型、语义相似度与检索基础",
+      "source_url": "https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings",
+      "sub_tags": [
+        "商业选型与成本 ROI",
+        "工业 RAG 与混合检索",
+        "线上稳定性与降级风控"
+      ],
+      "topics": [
+        "RAG 与上下文工程",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 6,
+      "vendor": "Google / Gemini",
+      "vendor_id": "google",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-41347f74",
+      "level": "L3",
+      "source_title": "[OpenAI 官方指南] OpenAI Agents SDK 入门：多 Agent Handoffs 任务交接、路由委派与输入过滤",
+      "source_url": "https://openai.github.io/openai-agents-python/handoffs/",
+      "sub_tags": [
+        "多 Agent 与图编排",
+        "MCP 与 ACI 工具设计",
+        "商业选型与成本 ROI",
+        "线上稳定性与降级风控"
+      ],
+      "topics": [
+        "Agent 编排与工作流",
+        "RAG 与上下文工程"
+      ],
+      "total_assets": 6,
+      "vendor": "OpenAI / GPT",
+      "vendor_id": "openai",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-26b7fe62",
+      "level": "L2",
+      "source_title": "[OpenAI 官方指南] Vector Embeddings 向量嵌入基础：语义检索、余弦相似度、分块与 RAG 入门原理",
+      "source_url": "https://platform.openai.com/docs/guides/embeddings",
+      "sub_tags": [
+        "工业 RAG 与混合检索",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "RAG 与上下文工程",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 6,
+      "vendor": "OpenAI / GPT",
+      "vendor_id": "openai",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-ec365e4f",
+      "level": "L2",
+      "source_title": "[Google 官方指南] Vertex AI Prompt Design 入门与核心策略：提示词构成、Zero-Shot/Few-Shot、系统指令与迭代优化",
+      "source_url": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies",
+      "sub_tags": [
+        "推理模型与现代 Prompt",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "Prompt 工程"
+      ],
+      "total_assets": 6,
+      "vendor": "Google / Gemini",
+      "vendor_id": "google",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-3fa85e7e",
+      "level": "L3",
+      "source_title": "[Google 官方指南] Vertex AI Structured Output 结构化输出入门：JSON Schema 约束与可控生成实践",
+      "source_url": "https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output",
+      "sub_tags": [
+        "推理模型与现代 Prompt",
+        "Evals 与多层验证栈",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "Prompt 工程",
+        "Eval 评测与可靠性",
+        "Agent 编排与工作流"
+      ],
+      "total_assets": 6,
+      "vendor": "Google / Gemini",
+      "vendor_id": "google",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-50006fdb",
+      "level": "L2",
+      "source_title": "[OpenAI 官方指南] Function Calling 工具调用入门：工具 Schema 定义、Strict 严格模式与完整调用闭环",
+      "source_url": "https://platform.openai.com/docs/guides/function-calling",
+      "sub_tags": [
+        "自主探索与跨源推理",
+        "MCP 与 ACI 工具设计",
+        "商业选型与成本 ROI",
+        "推理模型与现代 Prompt"
+      ],
+      "topics": [
+        "MCP 与工具集成",
+        "Prompt 工程",
+        "Agent 编排与工作流"
+      ],
+      "total_assets": 6,
+      "vendor": "OpenAI / GPT",
+      "vendor_id": "openai",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 1,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-d8efff7f",
+      "level": "L3",
+      "source_title": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
+      "source_url": "https://arxiv.org/abs/2611.33093v1",
+      "sub_tags": [
+        "Evals 与多层验证栈",
+        "商业选型与成本 ROI",
+        "多 Agent 与图编排",
+        "Harness 护栏与沙箱安全"
+      ],
+      "topics": [
+        "Eval 评测与可靠性",
+        "Agent 编排与工作流"
+      ],
+      "total_assets": 5,
+      "vendor": "arXiv 前沿论文",
+      "vendor_id": "arxiv",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 1
+      },
+      "date": "2026-11-27",
+      "id": "art-cf87299d",
+      "level": "L3",
+      "source_title": "[OpenAI 官方指南] Model Optimization 优化飞轮：Prompt 工程、Evals 评测与 Fine-Tuning 微调选型路径",
+      "source_url": "https://platform.openai.com/docs/guides/model-optimization",
+      "sub_tags": [
+        "Evals 与多层验证栈",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "Eval 评测与可靠性",
+        "Prompt 工程",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 5,
+      "vendor": "OpenAI / GPT",
+      "vendor_id": "openai",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 1,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-e3ed5457",
+      "level": "L2",
+      "source_title": "[OpenAI 官方指南] Working with Evals 评测入门：数据集构建、自动化 Grader 评分器与迭代测试流程",
+      "source_url": "https://platform.openai.com/docs/guides/evals",
+      "sub_tags": [
+        "Evals 与多层验证栈",
+        "多 Agent 与图编排"
+      ],
+      "topics": [
+        "Eval 评测与可靠性",
+        "Prompt 工程"
+      ],
+      "total_assets": 5,
+      "vendor": "OpenAI / GPT",
+      "vendor_id": "openai",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 1,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-0ae09ddb",
+      "level": "L2",
+      "source_title": "[OpenAI 官方指南] Prompt Engineering 入门基础：Responses API、消息角色层级与通用/推理模型提示策略",
+      "source_url": "https://platform.openai.com/docs/guides/prompt-engineering",
+      "sub_tags": [
+        "Prompt Cache 与压缩",
+        "商业选型与成本 ROI",
+        "多 Agent 与图编排",
+        "MCP 与 ACI 工具设计"
+      ],
+      "topics": [
+        "Prompt 工程",
+        "Agent 编排与工作流"
+      ],
+      "total_assets": 5,
+      "vendor": "OpenAI / GPT",
+      "vendor_id": "openai",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 1,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-f5673fae",
+      "level": "L2",
+      "source_title": "[Anthropic 官方课程] Tool Use 工具调用入门全流程：工具定义、强制 JSON 输出、执行闭环与 tool_choice 策略",
+      "source_url": "https://github.com/anthropics/courses/tree/master/tool_use",
+      "sub_tags": [
+        "MCP 与 ACI 工具设计"
+      ],
+      "topics": [
+        "MCP 与工具集成",
+        "Prompt 工程",
+        "Agent 编排与工作流"
+      ],
+      "total_assets": 5,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 1,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-0ca25292",
+      "level": "L3",
+      "source_title": "[Anthropic 官方课程] Claude API 入门基础：Messages 对话格式、模型选型与采样参数（Temperature / Top-P / Max Tokens）",
+      "source_url": "https://github.com/anthropics/courses/tree/master/anthropic_api_fundamentals",
+      "sub_tags": [
+        "商业选型与成本 ROI",
+        "多 Agent 与图编排",
+        "Evals 与多层验证栈"
+      ],
+      "topics": [
+        "Prompt 工程",
+        "选型架构与咨询 ROI",
+        "Eval 评测与可靠性"
+      ],
+      "total_assets": 5,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 1,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-1a826e59",
+      "level": "L2",
+      "source_title": "[Anthropic 官方课程] Prompt 评测入门（Evaluations 101）：评测生命周期与代码/模型/人工三类评分器",
+      "source_url": "https://github.com/anthropics/courses/tree/master/prompt_evaluations",
+      "sub_tags": [
+        "Evals 与多层验证栈",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "Eval 评测与可靠性"
+      ],
+      "total_assets": 5,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 0,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-b32cc300",
+      "level": "L3",
+      "source_title": "Gen AI evaluation service overview | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+      "source_url": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview",
+      "sub_tags": [
+        "Evals 与多层验证栈",
+        "商业选型与成本 ROI",
+        "MCP 与 ACI 工具设计"
+      ],
+      "topics": [
+        "Eval 评测与可靠性",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 4,
+      "vendor": "Google / Gemini",
+      "vendor_id": "google",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 0,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-b7b5c6b5",
+      "level": "L2",
+      "source_title": "Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance",
+      "source_url": "https://arxiv.org/abs/2611.33098v1",
+      "sub_tags": [
+        "商业选型与成本 ROI",
+        "Harness 护栏与沙箱安全",
+        "自主探索与跨源推理",
+        "多 Agent 与图编排"
+      ],
+      "topics": [
+        "Agent 编排与工作流",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 4,
+      "vendor": "arXiv 前沿论文",
+      "vendor_id": "arxiv",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 1,
+        "prompts": 1,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-a4ed3777",
+      "level": "L3",
+      "source_title": "[Google 官方指南] ADK Agents 架构基础入门：LLM Agent、确定性 Workflow Agent 与 Custom Agent 选型指南",
+      "source_url": "https://google.github.io/adk-docs/agents/",
+      "sub_tags": [
+        "多 Agent 与图编排",
+        "商业选型与成本 ROI",
+        "MCP 与 ACI 工具设计",
+        "Harness 护栏与沙箱安全"
+      ],
+      "topics": [
+        "Agent 编排与工作流",
+        "MCP 与工具集成"
+      ],
+      "total_assets": 4,
+      "vendor": "Google / Gemini",
+      "vendor_id": "google",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 0,
+        "prompts": 1,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-eca2f89a",
+      "level": "L2",
+      "source_title": "[Google 官方指南] Vertex AI RAG Engine 架构入门：文档摄取、分块、向量索引、检索与增强生成全链路",
+      "source_url": "https://cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/rag-overview",
+      "sub_tags": [
+        "工业 RAG 与混合检索",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "RAG 与上下文工程",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 3,
+      "vendor": "Google / Gemini",
+      "vendor_id": "google",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 1,
+        "prompts": 0,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-0cc9505e",
+      "level": "L1",
+      "source_title": "[Anthropic 官方课程] Prompt 工程入门基础：提示词结构、清晰直接指令与 XML 数据/指令隔离",
+      "source_url": "https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial",
+      "sub_tags": [
+        "推理模型与现代 Prompt",
+        "自主探索与跨源推理",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "Prompt 工程"
+      ],
+      "total_assets": 3,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 0,
+        "prompts": 0,
+        "questions": 2
+      },
+      "date": "2026-11-27",
+      "id": "art-70373211",
+      "level": "L1",
+      "source_title": "[Google 官方教程] 大语言模型基础入门（ML Crash Course）：Token、Transformer 注意力机制、预训练与微调",
+      "source_url": "https://developers.google.com/machine-learning/crash-course/llm",
+      "sub_tags": [
+        "长程记忆与 Dreaming",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "RAG 与上下文工程",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 2,
+      "vendor": "Google / Gemini",
+      "vendor_id": "google",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-e0681976",
+      "level": "L3",
+      "source_title": "Anthropic AI Agent 架构最佳实践：主循环 vs Subagent 取舍、渐进式披露与 ACI 工具设计",
+      "source_url": "https://share.gemini.google/uAkdRjEe89aT#agent-architecture",
+      "sub_tags": [
+        "单主循环与渐进披露",
+        "多 Agent 与图编排",
+        "MCP 与 ACI 工具设计"
+      ],
+      "topics": [
+        "Agent 编排与工作流",
+        "MCP 与工具集成"
+      ],
+      "total_assets": 6,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-c81d7c5f",
+      "level": "L3",
+      "source_title": "Anthropic Agent 4 层记忆架构与 Dreaming 离线整理机制深度拆解",
+      "source_url": "https://share.gemini.google/uAkdRjEe89aT#agent-memory-dreaming",
+      "sub_tags": [
+        "长程记忆与 Dreaming",
+        "工业 RAG 与混合检索",
+        "多 Agent 与图编排",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "RAG 与上下文工程",
+        "Agent 编排与工作流"
+      ],
+      "total_assets": 6,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-0630a187",
+      "level": "L3",
+      "source_title": "[OpenAI 官方] Unrolling the Codex Agent Loop：智能体循环、Prompt Caching、自动压缩与沙箱架构剖析",
+      "source_url": "https://openai.com/index/unrolling-the-codex-agent-loop/",
+      "sub_tags": [
+        "Prompt Cache 与压缩",
+        "Harness 护栏与沙箱安全",
+        "MCP 与 ACI 工具设计",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "RAG 与上下文工程",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 6,
+      "vendor": "OpenAI / GPT",
+      "vendor_id": "openai",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-e38f3dc7",
+      "level": "L3",
+      "source_title": "[OpenAI 官方] Harness Engineering：0 行手写代码交付百万行生产系统的 Agent-First 工程实践",
+      "source_url": "https://openai.com/index/harness-engineering/",
+      "sub_tags": [
+        "Harness 护栏与沙箱安全",
+        "商业选型与成本 ROI",
+        "自主探索与跨源推理",
+        "单主循环与渐进披露"
+      ],
+      "topics": [
+        "Agent 编排与工作流",
+        "RAG 与上下文工程"
+      ],
+      "total_assets": 6,
+      "vendor": "OpenAI / GPT",
+      "vendor_id": "openai",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-a96531f5",
+      "level": "L3",
+      "source_title": "[Anthropic 官方] Demystifying Evals for AI Agents & Claude Code 团队验证栈实践",
+      "source_url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "sub_tags": [
+        "Evals 与多层验证栈",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "Eval 评测与可靠性"
+      ],
+      "total_assets": 6,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-583c8898",
+      "level": "L3",
+      "source_title": "[Anthropic 官方] Code Execution with MCP：用代码执行与沙箱过滤重构高效 Agent",
+      "source_url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+      "sub_tags": [
+        "MCP 与 ACI 工具设计",
+        "Harness 护栏与沙箱安全",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "MCP 与工具集成",
+        "选型架构与咨询 ROI",
+        "Agent 编排与工作流"
+      ],
+      "total_assets": 6,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-b208141d",
+      "level": "L3",
+      "source_title": "[OpenAI 官方] GPT-5 与推理模型 Prompting 指南：指令层级、推理强度控制、消除矛盾与 Tool Preambles",
+      "source_url": "https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide",
+      "sub_tags": [
+        "推理模型与现代 Prompt",
+        "Prompt Cache 与压缩",
+        "商业选型与成本 ROI",
+        "MCP 与 ACI 工具设计"
+      ],
+      "topics": [
+        "Prompt 工程",
+        "Agent 编排与工作流",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 6,
+      "vendor": "OpenAI / GPT",
+      "vendor_id": "openai",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-474d57b6",
+      "level": "L3",
+      "source_title": "[Anthropic 官方] Claude 4 / Opus / Sonnet Prompt 工程最佳实践：XML 边界、解释动机与防过度触发",
+      "source_url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices",
+      "sub_tags": [
+        "推理模型与现代 Prompt",
+        "商业选型与成本 ROI",
+        "工业 RAG 与混合检索",
+        "MCP 与 ACI 工具设计"
+      ],
+      "topics": [
+        "Prompt 工程",
+        "RAG 与上下文工程",
+        "Agent 编排与工作流"
+      ],
+      "total_assets": 6,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-e4a36f42",
+      "level": "L3",
+      "source_title": "[Google 官方] Agent Development Kit (ADK)：确定性工作流编排、Session/State/Memory 三层状态与回调护栏架构",
+      "source_url": "https://google.github.io/adk-docs/",
+      "sub_tags": [
+        "多 Agent 与图编排",
+        "长程记忆与 Dreaming",
+        "线上稳定性与降级风控",
+        "MCP 与 ACI 工具设计"
+      ],
+      "topics": [
+        "Agent 编排与工作流",
+        "RAG 与上下文工程",
+        "Eval 评测与可靠性"
+      ],
+      "total_assets": 6,
+      "vendor": "Google / Gemini",
+      "vendor_id": "google",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-65129192",
+      "level": "L3",
+      "source_title": "[Google Cloud 官方] 企业级 GenAI / RAG 生产架构、Token 与 GPU TCO 成本算账及安全合规指南",
+      "source_url": "https://cloud.google.com/architecture/rag-capable-gen-ai-app-using-vertex-ai",
+      "sub_tags": [
+        "商业选型与成本 ROI",
+        "工业 RAG 与混合检索",
+        "多 Agent 与图编排",
+        "Prompt Cache 与压缩"
+      ],
+      "topics": [
+        "选型架构与咨询 ROI",
+        "RAG 与上下文工程"
+      ],
+      "total_assets": 6,
+      "vendor": "Google / Gemini",
+      "vendor_id": "google",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-fcf7d79c",
+      "level": "L3",
+      "source_title": "[Google 官方] Gemini API Grounding 联网接地：动态检索阈值、groundingMetadata 溯源核验与成本控制",
+      "source_url": "https://ai.google.dev/gemini-api/docs/google-search",
+      "sub_tags": [
+        "工业 RAG 与混合检索",
+        "商业选型与成本 ROI",
+        "Evals 与多层验证栈",
+        "多 Agent 与图编排"
+      ],
+      "topics": [
+        "RAG 与上下文工程",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 6,
+      "vendor": "Google / Gemini",
+      "vendor_id": "google",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-deef14b6",
+      "level": "L3",
+      "source_title": "[OpenAI 官方] LLM 生产环境稳定性、延迟优化与降级风控最佳实践（Rate Limits / Retries / Fallback / Guardrails）",
+      "source_url": "https://platform.openai.com/docs/guides/production-best-practices",
+      "sub_tags": [
+        "线上稳定性与降级风控",
+        "多 Agent 与图编排",
+        "商业选型与成本 ROI",
+        "Prompt Cache 与压缩"
+      ],
+      "topics": [
+        "Eval 评测与可靠性",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 6,
+      "vendor": "OpenAI / GPT",
+      "vendor_id": "openai",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-a4257b9b",
+      "level": "L3",
+      "source_title": "[Anthropic 官方] Contextual Retrieval 工业级 RAG 实践：上下文增强切片、BM25 混合检索与 Rerank 精排",
+      "source_url": "https://www.anthropic.com/news/contextual-retrieval",
+      "sub_tags": [
+        "工业 RAG 与混合检索",
+        "Evals 与多层验证栈",
+        "商业选型与成本 ROI",
+        "Prompt Cache 与压缩"
+      ],
+      "topics": [
+        "RAG 与上下文工程",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 6,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-720af970",
+      "level": "L3",
+      "source_title": "[Google 官方] Gemini API Long Context 与 Context Caching：百万上下文共享预算、隐式/显式缓存与成本延迟优化",
+      "source_url": "https://ai.google.dev/gemini-api/docs/caching",
+      "sub_tags": [
+        "Prompt Cache 与压缩",
+        "商业选型与成本 ROI",
+        "线上稳定性与降级风控",
+        "工业 RAG 与混合检索"
+      ],
+      "topics": [
+        "RAG 与上下文工程",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 6,
+      "vendor": "Google / Gemini",
+      "vendor_id": "google",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 1,
+        "prompts": 1,
+        "questions": 2
+      },
+      "date": "2026-11-26",
+      "id": "art-cd374312",
+      "level": "L3",
+      "source_title": "Claude Code（CLAUDE.md / MEMORY.md）与自建 Agent 记忆系统落地技巧与 5 大避坑清单",
+      "source_url": "https://share.gemini.google/uAkdRjEe89aT#claude-md-pitfalls",
+      "sub_tags": [
+        "长程记忆与 Dreaming",
+        "Prompt Cache 与压缩",
+        "单主循环与渐进披露",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "RAG 与上下文工程",
+        "Agent 编排与工作流"
+      ],
+      "total_assets": 4,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-25",
+      "id": "art-0d8a88c3",
+      "level": "L3",
+      "source_title": "Graph Engineering: build 1000+ agent loops in one window, from one prompt",
+      "source_url": "https://x.com/0xcodila/status/2079597821511020996",
+      "sub_tags": [
+        "多 Agent 与图编排",
+        "商业选型与成本 ROI"
+      ],
+      "topics": [
+        "Agent 编排与工作流",
+        "选型架构与咨询 ROI",
+        "Eval 评测与可靠性"
+      ],
+      "total_assets": 6,
+      "vendor": "前沿研究者 & 社区",
+      "vendor_id": "community",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 2,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-25",
+      "id": "art-be42bcf0",
+      "level": "L3",
+      "source_title": "Reward Hacking in Reinforcement Learning",
+      "source_url": "https://lilianweng.github.io/posts/2024-11-28-reward-hacking/",
+      "sub_tags": [
+        "Evals 与多层验证栈",
+        "商业选型与成本 ROI",
+        "Harness 护栏与沙箱安全"
+      ],
+      "topics": [
+        "Eval 评测与可靠性",
+        "选型架构与咨询 ROI",
+        "Prompt 工程"
+      ],
+      "total_assets": 6,
+      "vendor": "前沿研究者 & 社区",
+      "vendor_id": "community",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 0,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-25",
+      "id": "art-2c500eb6",
+      "level": "L3",
+      "source_title": "Three LLM inflection points in twelve months",
+      "source_url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+      "sub_tags": [
+        "自主探索与跨源推理",
+        "Harness 护栏与沙箱安全",
+        "商业选型与成本 ROI",
+        "线上稳定性与降级风控"
+      ],
+      "topics": [
+        "Agent 编排与工作流",
+        "选型架构与咨询 ROI",
+        "Eval 评测与可靠性"
+      ],
+      "total_assets": 4,
+      "vendor": "前沿研究者 & 社区",
+      "vendor_id": "community",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 0,
+        "pitfalls": 0,
+        "prompts": 2,
+        "questions": 2
+      },
+      "date": "2026-11-25",
+      "id": "art-6ac4fc06",
+      "level": "L3",
+      "source_title": "GPT 6.2 Astra Solves a Historical Mystery",
+      "source_url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+      "sub_tags": [
+        "自主探索与跨源推理",
+        "商业选型与成本 ROI",
+        "多 Agent 与图编排"
+      ],
+      "topics": [
+        "Agent 编排与工作流",
+        "选型架构与咨询 ROI"
+      ],
+      "total_assets": 4,
+      "vendor": "前沿研究者 & 社区",
+      "vendor_id": "community",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 1,
+        "pitfalls": 0,
+        "prompts": 0,
+        "questions": 0
+      },
+      "date": "",
+      "id": "art-c81d7c5f",
+      "level": "L3",
+      "source_title": "Anthropic《The components of agent memory》& 共享对话整理",
+      "source_url": "https://share.gemini.google/uAkdRjEe89aT#agent-memory-dreaming",
+      "sub_tags": [
+        "长程记忆与 Dreaming"
+      ],
+      "topics": [
+        "RAG 与上下文工程"
+      ],
+      "total_assets": 1,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 1,
+        "pitfalls": 0,
+        "prompts": 0,
+        "questions": 0
+      },
+      "date": "",
+      "id": "art-0630a187",
+      "level": "L3",
+      "source_title": "Anthropic & OpenAI 官方工程分享综合架构图",
+      "source_url": "https://openai.com/index/unrolling-the-codex-agent-loop/",
+      "sub_tags": [
+        "Prompt Cache 与压缩",
+        "MCP 与 ACI 工具设计",
+        "Evals 与多层验证栈"
+      ],
+      "topics": [
+        "Agent 编排与工作流"
+      ],
+      "total_assets": 1,
+      "vendor": "Anthropic / Claude",
+      "vendor_id": "anthropic",
+      "week_key": "2026-W48"
+    },
+    {
+      "counts": {
+        "diagrams": 1,
+        "pitfalls": 0,
+        "prompts": 0,
+        "questions": 0
+      },
+      "date": "",
+      "id": "art-65129192",
+      "level": "L3",
+      "source_title": "[Google Cloud 官方] 企业级 GenAI / RAG 生产架构与跨厂稳定性/成本监控闭环",
+      "source_url": "https://cloud.google.com/architecture/rag-capable-gen-ai-app-using-vertex-ai",
+      "sub_tags": [
+        "线上稳定性与降级风控",
+        "工业 RAG 与混合检索",
+        "多 Agent 与图编排"
+      ],
+      "topics": [
+        "RAG 与上下文工程"
+      ],
+      "total_assets": 1,
+      "vendor": "Google / Gemini",
+      "vendor_id": "google",
+      "week_key": "2026-W48"
+    }
+  ],
+  "generated_at": "2026-11-27T13:01:47+00:00",
+  "levels": [
+    {
+      "id": "L0",
+      "label": "🐣 零基础通识 L0"
+    },
+    {
+      "id": "L1",
+      "label": "🌱 入门基础 L1"
+    },
+    {
+      "id": "L2",
+      "label": "🔧 工程进阶 L2"
+    },
+    {
+      "id": "L3",
+      "label": "🏗️ 架构深水 L3"
+    }
+  ],
+  "sub_tags": [
+    "多 Agent 与图编排",
+    "单主循环与渐进披露",
+    "长程记忆与 Dreaming",
+    "工业 RAG 与混合检索",
+    "MCP 与 ACI 工具设计",
+    "Prompt Cache 与压缩",
+    "线上稳定性与降级风控",
+    "Evals 与多层验证栈",
+    "推理模型与现代 Prompt",
+    "Harness 护栏与沙箱安全",
+    "商业选型与成本 ROI",
+    "自主探索与跨源推理"
+  ],
+  "topics": [
+    "Agent 编排与工作流",
+    "RAG 与上下文工程",
+    "MCP 与工具集成",
+    "Eval 评测与可靠性",
+    "Prompt 工程",
+    "选型架构与咨询 ROI"
+  ],
+  "vendors": [
+    {
+      "id": "primer",
+      "label": "🎓 零基础通识课"
+    },
+    {
+      "id": "anthropic",
+      "label": "Anthropic / Claude"
+    },
+    {
+      "id": "openai",
+      "label": "OpenAI / GPT"
+    },
+    {
+      "id": "google",
+      "label": "Google / Gemini"
+    },
+    {
+      "id": "community",
+      "label": "前沿研究者 & 社区"
+    },
+    {
+      "id": "arxiv",
+      "label": "arXiv 前沿论文"
+    }
+  ]
+}

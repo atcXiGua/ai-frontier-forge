@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>AI Frontier Forge · 前沿 AI 知识熔炉</title>
+  <link rel="icon" type="image/png" href="./logo.png" />
+  <link rel="apple-touch-icon" href="./logo.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./interview.css" />
+</head>
+<body>
+  <div id="railBackdrop" class="rail-backdrop hidden"></div>
+  <div id="filterBackdrop" class="filter-backdrop hidden"></div>
+
+  <div class="app-layout">
+    <!-- Left App Rail -->
+    <aside id="appRail" class="app-rail" aria-label="主导航与分类">
+      <div class="rail-brand">
+        <button id="brandHomeBtn" type="button" class="rail-brand-home" title="返回首页概览" aria-label="AI Frontier Forge · 返回首页概览">
+          <span class="brand-badge">
+            <img src="./logo.png" alt="" width="38" height="38" class="brand-logo-img" decoding="async" />
+          </span>
+          <span class="rail-brand-text">
+            <span class="rail-brand-title">AI Frontier Forge</span>
+          </span>
+        </button>
+        <button id="closeRailBtn" class="btn btn-ghost btn-xs rail-mobile-only" aria-label="关闭导航">✕</button>
+      </div>
+
+      <div class="rail-scroll">
+        <div class="rail-section">
+          <button class="rail-nav-btn active" data-tab="overview">
+            <span class="rail-nav-label">📊 概览与周报</span>
+            <span id="tabCountDigests" class="count-pill">0</span>
+          </button>
+          <button class="rail-nav-btn rail-nav-primer" data-tab="primer">
+            <span class="rail-nav-label">🎓 零基础通识课</span>
+            <span id="tabCountPrimer" class="count-pill">0</span>
+          </button>
+        </div>
+
+        <div class="rail-section">
+          <div class="rail-group-title">知识库</div>
+          <button class="rail-nav-btn" data-tab="all">
+            <span class="rail-nav-label">📦 全部资产</span>
+            <span id="tabCountAll" class="count-pill">0</span>
+          </button>
+          <button class="rail-nav-btn" data-tab="questions">
+            <span class="rail-nav-label">🧠 行业题库</span>
+            <span id="tabCountQuestions" class="count-pill">0</span>
+          </button>
+          <button class="rail-nav-btn" data-tab="prompts">
+            <span class="rail-nav-label">✨ 提示词库</span>
+            <span id="tabCountPrompts" class="count-pill">0</span>
+          </button>
+          <button class="rail-nav-btn" data-tab="pitfalls">
+            <span class="rail-nav-label">🛡️ 避坑指南</span>
+            <span id="tabCountPitfalls" class="count-pill">0</span>
+          </button>
+          <button class="rail-nav-btn" data-tab="diagrams">
+            <span class="rail-nav-label">🎬 交互图解</span>
+            <span id="tabCountDiagrams" class="count-pill">0</span>
+          </button>
+          <button class="rail-nav-btn" data-tab="articles">
+            <span class="rail-nav-label">📚 原文文章库</span>
+            <span id="tabCountArticles" class="count-pill">0</span>
+          </button>
+        </div>
+
+        <div class="rail-divider"></div>
+
+        <div class="rail-section">
+          <button id="toggleTopicTree" class="rail-tree-head" aria-expanded="true">
+            <span>▾ 按专题分类</span>
+          </button>
+          <div id="topicTreeList" class="rail-tree-list"></div>
+        </div>
+
+        <div class="rail-section">
+          <button id="toggleLevelTree" class="rail-tree-head" aria-expanded="false">
+            <span>▸ 按难度分级</span>
+          </button>
+          <div id="levelTreeList" class="rail-tree-list collapsed"></div>
+        </div>
+
+        <div class="rail-section">
+          <button id="toggleVendorTree" class="rail-tree-head" aria-expanded="false">
+            <span>▸ 按厂商信源</span>
+          </button>
+          <div id="vendorTreeList" class="rail-tree-list collapsed"></div>
+        </div>
+      </div>
+
+      <div class="rail-dock">
+        <button id="randomQuizBtn" class="btn btn-primary btn-sm rail-dock-btn">🎲 随机抽题模拟面试</button>
+        <button id="openArchiveBtn" class="btn btn-ghost btn-sm rail-dock-btn btn-archive-nav" title="查看、导出与打印历史模拟面试报告">📂 复盘档案 (0)</button>
+        <button id="aiSettingsBtn" class="btn btn-ghost btn-sm rail-dock-btn btn-ai-config" title="配置 AI 模拟面试官（可选 BYOK）">🤖 AI 面试官（免 Key / 配置）</button>
+        <div class="rail-dock-row">
+          <button id="themeToggle" class="btn btn-ghost btn-xs" title="切换深浅主题">☀️ 亮色</button>
+          <span id="updatedAt" class="rail-updated-meta">加载中...</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right Main Workspace -->
+    <div class="workspace-main">
+      <header class="main-toolbar">
+        <div class="toolbar-left">
+          <button id="openRailBtn" class="btn btn-ghost btn-sm rail-mobile-only" aria-label="打开导航">☰</button>
+          <button id="goHomeBtn" class="btn btn-ghost btn-sm toolbar-home-btn hidden" title="返回首页概览" aria-label="返回首页">🏠<span class="toolbar-btn-text"> 首页</span></button>
+          <div class="toolbar-title-wrap">
+            <h1 id="viewTitle" class="view-title">📊 概览与周报</h1>
+            <span id="viewCountBadge" class="count-pill">0</span>
+          </div>
+        </div>
+
+        <div class="toolbar-right">
+          <div class="toolbar-search-box">
+            <input id="searchInput" type="search" placeholder="快速过滤当前列表..." aria-label="搜索当前列表" />
+          </div>
+          <button id="cmdPaletteBtn" class="btn btn-ghost btn-sm cmd-trigger-btn" title="全局分类跳转与跨库检索 (Ctrl+K)" aria-label="全局检索与跳转">
+            <span>🔍<span class="toolbar-btn-text"> 全局跳转</span></span>
+            <kbd class="kbd-hint">Ctrl K</kbd>
+          </button>
+          <button id="shareSiteBtn" class="btn btn-ghost btn-sm toolbar-icon-btn" title="一键复制当前视图或整站推荐链接" aria-label="分享当前视图">🔗<span class="toolbar-btn-text"> 分享</span></button>
+          <div class="filter-popover-anchor">
+            <button id="filterPopoverBtn" class="btn btn-ghost btn-sm toolbar-icon-btn" aria-expanded="false" aria-controls="filterPopover" aria-label="打开筛选器">
+              🎛️<span class="toolbar-btn-text"> 筛选</span> <span id="activeFilterCount" class="count-pill hidden">0</span>
+            </button>
+            <div id="filterPopover" class="filter-popover hidden" role="dialog" aria-label="高级筛选器">
+              <div class="filter-pop-head">
+                <strong>精准筛选</strong>
+                <button id="resetFiltersBtn" class="btn btn-ghost btn-xs">重置全部</button>
+              </div>
+              <div class="filter-pop-group">
+                <label class="filter-pop-label" for="subTagSearchInput">精细能力标签</label>
+                <input id="subTagSearchInput" type="search" class="subtag-search-input" placeholder="过滤能力标签..." autocomplete="off" />
+                <div id="subTagPills" class="subtag-bar"></div>
+              </div>
+              <div class="filter-pop-grid">
+                <div class="filter-pop-group" id="trackFilterWrap">
+                  <label class="filter-pop-label" for="trackFilter">目标赛道</label>
+                  <select id="trackFilter">
+                    <option value="all">全部赛道</option>
+                    <option value="engineering">工程落地</option>
+                    <option value="consulting">咨询方案</option>
+                    <option value="both">工程+咨询双修</option>
+                  </select>
+                </div>
+                <div class="filter-pop-group" id="subFilterWrap">
+                  <label class="filter-pop-label" for="subFilter" id="subFilterLabel">难度 / 严重度</label>
+                  <select id="subFilter"></select>
+                </div>
+              </div>
+              <div class="filter-pop-group">
+                <label class="filter-pop-label" for="weekFilter">周报期次</label>
+                <select id="weekFilter"></select>
+              </div>
+              <div class="filter-pop-checks">
+                <label class="toggle-inline">
+                  <input type="checkbox" id="onlyBookmarked" />
+                  <span>⭐ 仅看已收藏</span>
+                </label>
+                <label class="toggle-inline" id="unmasteredWrap">
+                  <input type="checkbox" id="onlyUnmastered" />
+                  <span>只看未掌握题目</span>
+                </label>
+                <label class="toggle-inline">
+                  <input type="checkbox" id="onlyActiveLifecycle" checked />
+                  <span>仅看前沿有效与常青</span>
+                </label>
+              </div>
+              <div class="filter-pop-foot">
+                <button id="closeFilterPopoverBtn" class="btn btn-primary btn-xs">完成</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav id="mobileQuickTabs" class="mobile-quick-tabs" aria-label="移动端快捷切换">
+        <button type="button" class="mobile-qtab active" data-mobile-tab="overview">📊 首页</button>
+        <button type="button" class="mobile-qtab" data-mobile-tab="primer">🎓 零基础</button>
+        <button type="button" class="mobile-qtab" data-mobile-tab="questions">🧠 题库</button>
+        <button type="button" class="mobile-qtab" data-mobile-tab="prompts">✨ 提示词</button>
+        <button type="button" class="mobile-qtab" data-mobile-tab="pitfalls">🛡️ 避坑</button>
+        <button type="button" class="mobile-qtab" data-mobile-tab="diagrams">🎬 图解</button>
+        <button type="button" class="mobile-qtab" data-mobile-tab="articles">📚 原文</button>
+      </nav>
+
+      <div id="activeFilterChips" class="active-chips-bar hidden"></div>
+
+      <main id="contentArea" class="workspace-content"></main>
+
+      <footer class="footer">
+        <div class="footer-left">
+          <span><strong>AI Frontier Forge</strong> · 原文溯源 · 持续更新</span>
+          <span id="siteAnalyticsPill" class="analytics-pill hidden">
+            👀 累计访问 <strong id="vercount_value_site_pv">--</strong> 次 · 访客 <strong id="vercount_value_site_uv">--</strong> 人
+          </span>
+        </div>
+        <div class="footer-right" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+          <span>刷题进度、收藏与笔记保存在本地浏览器</span>
+          <button id="siteFeedbackBtn" type="button" class="btn btn-ghost btn-xs">💬 反馈 / 推荐好文</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Slide-over Focused Reader Drawer -->
+  <div id="readerBackdrop" class="drawer-backdrop hidden"></div>
+  <aside id="readerDrawer" class="reader-drawer hidden" role="dialog" aria-modal="true" aria-label="条目详情阅读抽屉">
+    <div id="readerDrawerHeader" class="drawer-header"></div>
+    <div id="readerDrawerBody" class="drawer-body"></div>
+    <div id="readerDrawerFooter" class="drawer-footer"></div>
+  </aside>
+
+  <!-- Global Ctrl+K Command Palette -->
+  <div id="cmdPaletteBackdrop" class="cmd-backdrop hidden" role="dialog" aria-modal="true" aria-label="全局分类跳转命令面板">
+    <div class="cmd-dialog">
+      <div class="cmd-input-row">
+        <span class="cmd-icon">🔍</span>
+        <input id="cmdPaletteInput" type="text" placeholder="搜索专题、厂商、原文、题库、提示词、避坑..." autocomplete="off" />
+        <kbd class="kbd-hint">Esc</kbd>
+        <button id="cmdCloseBtn" type="button" class="btn btn-ghost btn-xs cmd-close-btn" aria-label="关闭搜索">✕</button>
+      </div>
+      <div id="cmdPaletteResults" class="cmd-results"></div>
+      <div class="cmd-footer">
+        <span>↑↓ 选择 · Enter 直达 · Esc 关闭</span>
+        <span>支持按专题 / 厂商 / 原文 / 资产跨库秒跳</span>
+      </div>
+    </div>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" title="回到顶部" aria-label="回到顶部">↑ 顶部</button>
+  <div id="interviewModalRoot"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="./platform.js"></script>
+  <script src="./primer.js"></script>
+  <script src="./interview.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

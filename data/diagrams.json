@@ -1,0 +1,708 @@
+[
+  {
+    "date": "",
+    "edges": [
+      {
+        "d": "M 230 316 L 230 274",
+        "id": "edge-l1-l2",
+        "pill": {
+          "text": "写入笔记",
+          "w": 68,
+          "x": 236,
+          "y": 286
+        }
+      },
+      {
+        "d": "M 414 349 L 556 349 Q 564 349 564 341 L 564 282",
+        "id": "edge-l1-dream",
+        "pill": {
+          "text": "读取日志",
+          "w": 68,
+          "x": 454,
+          "y": 337
+        }
+      },
+      {
+        "d": "M 388 250 L 464 250",
+        "id": "edge-l2-dream",
+        "pill": null
+      },
+      {
+        "d": "M 468 228 L 392 228",
+        "id": "edge-dream-l2",
+        "pill": {
+          "text": "纠错去重",
+          "w": 68,
+          "x": 396,
+          "y": 216
+        }
+      },
+      {
+        "d": "M 468 147 L 368 147",
+        "id": "edge-dream-l3",
+        "pill": {
+          "text": "编译 Wiki",
+          "w": 74,
+          "x": 384,
+          "y": 135
+        }
+      },
+      {
+        "d": "M 556 144 L 556 63 Q 556 55 548 55 L 344 55",
+        "id": "edge-dream-l4",
+        "pill": {
+          "text": "晋升索引",
+          "w": 68,
+          "x": 412,
+          "y": 43
+        }
+      }
+    ],
+    "id": "d-anthropic-memory-dreaming",
+    "level": "L3",
+    "lifecycle": "active",
+    "nodes": [
+      {
+        "badge": "第 4 层 · 顶层索引",
+        "example": "Claude Code 的 MEMORY.md 严格限制仅自动加载前 200 行或 25KB，详情下沉到下层文件。",
+        "h": 62,
+        "id": "node-l4",
+        "label": "L4 · 常驻注入层",
+        "redline": "设计红线：极度克制体积，防止上下文膨胀稀释模型注意力，且避免单条错误记忆污染后续每一次会话。",
+        "rx": 31,
+        "sub": "Injected Context · 极简索引",
+        "summary": "每次会话启动时自动加载的极简索引，只保留最高频规则与指向深层知识的入口指针。",
+        "title": "Injected Context（常驻注入层）",
+        "w": 220,
+        "x": 120,
+        "y": 24
+      },
+      {
+        "badge": "第 3 层 · 知识网络",
+        "example": "Stainless 35 万文件代码库经 128 轮 Dreaming 养出 Wiki，联用检索工具（RAG）后准确率达 61%（纯检索 53%），每题平均省约 2 万 Tokens。",
+        "h": 62,
+        "id": "node-l3",
+        "label": "L3 · 结构化 Wiki",
+        "redline": "定位边界：叠加在 RAG 搜索之上的高阶理解层，不替代精确检索，警惕抽象失败导致文档反向膨胀。",
+        "rx": 31,
+        "sub": "Memory Representations · 互链知识网",
+        "summary": "围绕特定主题相互链接的结构化知识网络，将零散笔记编译为体系化文档，大幅提升跨文档综合推理能力。",
+        "title": "Memory Representations（结构化 Wiki）",
+        "w": 268,
+        "x": 96,
+        "y": 116
+      },
+      {
+        "badge": "第 2 层 · 经验沉淀",
+        "example": "记录“该 API 返回的日期均为 UTC，需显式转换时区”或项目专属的测试/构建命令。",
+        "h": 62,
+        "id": "node-l2",
+        "label": "L2 · 记忆笔记",
+        "redline": "演进机制：可能存在局部重复或早期误判，需要由 Dreaming 引擎定期对照 L1 原始日志核查与去重。",
+        "rx": 31,
+        "sub": "Memory Notes · 跨会话经验与避坑",
+        "summary": "Agent 在跨会话任务中自主写下的经验总结、业务规则与避坑记录，随任务推进不断累积。",
+        "title": "Memory Notes（记忆笔记）",
+        "w": 316,
+        "x": 72,
+        "y": 208
+      },
+      {
+        "badge": "第 1 层 · 底层基准",
+        "example": "完整会话记录与工具原始输出，作为事实核查的最高裁判（Ground Truth）供离线回溯。",
+        "h": 66,
+        "id": "node-l1",
+        "label": "L1 · 原始对话日志",
+        "redline": "设计红线：容量最宽大、只追加不篡改，避免因摘要失真导致关键事实永久丢失。",
+        "rx": 33,
+        "sub": "Transcripts · Ground Truth 按需检索",
+        "summary": "完整、可检索的事件与对话记录，保留所有工具调用与上下文细节，不直接塞入常驻提示词，而是按需检索。",
+        "title": "Transcripts（原始对话日志）",
+        "w": 368,
+        "x": 46,
+        "y": 316
+      },
+      {
+        "badge": "核心引擎 · 离线异步",
+        "example": "离线整理绝不直接覆盖生产记忆库，而是输出至全新独立 Store，经 Diff 对比与人工抽检后再灰度切换。",
+        "h": 134,
+        "id": "node-dream",
+        "kind": "engine",
+        "label": "Dreaming",
+        "redline": "零干扰主任务，通过独立 Store 隔离发布风险，打破“错误记忆自我强化”的幻觉闭环。",
+        "rx": 24,
+        "sub": "离线整理引擎",
+        "sub2": "空闲运行 · 独立 Store",
+        "summary": "在系统空闲时段后台异步运行，对照第 1 层原始日志进行事实纠错、编译第 3 层 Wiki、去重并晋升高频规则。",
+        "title": "Dreaming（离线整理引擎）",
+        "w": 176,
+        "x": 468,
+        "y": 144
+      }
+    ],
+    "source_title": "Anthropic《The components of agent memory》& 共享对话整理",
+    "source_url": "https://share.gemini.google/uAkdRjEe89aT#agent-memory-dreaming",
+    "stages": [
+      {
+        "active_edges": [
+          "edge-l1-l2"
+        ],
+        "active_nodes": [
+          "node-l1",
+          "node-l2"
+        ],
+        "case_study": "Agent 踩坑后自主记下「API 返回 UTC 时间，需显式转换为本地时区」。",
+        "desc": "Agent 执行任务时，所有对话与工具调用完整沉淀为第 1 层原始日志；同时自主提炼高价值经验，向第 2 层写入跨会话记忆笔记。",
+        "engineering_point": "原始日志只追加不篡改，作为后续事实核查的唯一基准（Ground Truth）。",
+        "title": "会话运行与记录"
+      },
+      {
+        "active_edges": [
+          "edge-l1-dream",
+          "edge-l2-dream"
+        ],
+        "active_nodes": [
+          "node-l1",
+          "node-l2",
+          "node-dream"
+        ],
+        "case_study": "系统在非活跃窗口期拉取近期新增的 Transcripts 与未归档 Notes。",
+        "desc": "在会话空闲时间自动启动 Dreaming 引擎，批量读取第 1 层原始日志与第 2 层记忆笔记，全程异步运行，不干扰当前主任务。",
+        "engineering_point": "将耗时的记忆整理与实时对话解耦，避免主链路延迟增加。",
+        "title": "Dreaming 离线触发"
+      },
+      {
+        "active_edges": [
+          "edge-l1-dream",
+          "edge-dream-l2"
+        ],
+        "active_nodes": [
+          "node-l1",
+          "node-l2",
+          "node-dream"
+        ],
+        "case_study": "《宝可梦红》长程测试中，对照原始日志修正了 Agent 误记的宝可梦中心方位，立刻通关。",
+        "desc": "Dreaming 对照第 1 层原始日志回溯核查，修正第 2 层笔记中的事实偏差，并合并语义重复的条目。",
+        "engineering_point": "以 Ground Truth 打破「错误记忆自我强化」的幻觉循环。",
+        "title": "核查纠错与去重"
+      },
+      {
+        "active_edges": [
+          "edge-dream-l3"
+        ],
+        "active_nodes": [
+          "node-l3",
+          "node-dream"
+        ],
+        "case_study": "Stainless 35 万文件代码库经 128 轮 Dreaming 后，Wiki + 检索联用准确率达 61%（每题省约 2 万 Tokens）。",
+        "desc": "将零散、扁平的记忆笔记提炼并编译为第 3 层围绕主题相互链接的 Wiki 知识网络，显著提升跨文档综合推理能力。",
+        "engineering_point": "从碎片化笔记升级为带交叉引用的结构化知识表示，与 RAG 联用。",
+        "title": "编译结构化 Wiki"
+      },
+      {
+        "active_edges": [
+          "edge-dream-l4"
+        ],
+        "active_nodes": [
+          "node-l4",
+          "node-dream"
+        ],
+        "case_study": "Claude Code 将高频索引控制在 MEMORY.md 前 200 行 / 25KB 内，保持上下文清爽。",
+        "desc": "将最高频、最核心的规则提拔至第 4 层极简常驻索引，并将整理结果输出至独立的新 Store，经 Diff 审核确认后正式生效。",
+        "engineering_point": "严格控制常驻层体积上限，并通过独立新存储库实现灰度审核与可回滚。",
+        "title": "索引晋升与安全发布"
+      }
+    ],
+    "sub_tags": [
+      "长程记忆与 Dreaming"
+    ],
+    "subtitle": "支持自动播放 5 阶段流动动画、步进切换，以及点击任意节点查看架构红线与实测案例",
+    "title": "Anthropic Agent 4 层记忆架构与 Dreaming 离线整理循环",
+    "topic": "RAG 与上下文工程",
+    "vendor": "Anthropic / Claude",
+    "vendor_id": "anthropic",
+    "viewBox": "0 0 680 416",
+    "week_key": "2026-W48"
+  },
+  {
+    "date": "",
+    "edges": [
+      {
+        "d": "M 154 100 L 154 188 Q 154 198 164 198 L 214 198",
+        "id": "edge-prefix-loop",
+        "pill": {
+          "text": "前缀缓存命中",
+          "w": 84,
+          "x": 66,
+          "y": 134
+        }
+      },
+      {
+        "d": "M 462 182 L 526 182 Q 536 182 536 172 L 536 104",
+        "id": "edge-loop-mcp",
+        "pill": {
+          "text": "按需代码调用",
+          "w": 86,
+          "x": 456,
+          "y": 134
+        }
+      },
+      {
+        "d": "M 600 100 L 600 302",
+        "id": "edge-mcp-sandbox",
+        "pill": {
+          "text": "沙箱过滤数据",
+          "w": 84,
+          "x": 558,
+          "y": 192
+        }
+      },
+      {
+        "d": "M 408 330 L 348 330 Q 340 330 340 322 L 340 246",
+        "id": "edge-sandbox-loop",
+        "pill": {
+          "text": "观测与压缩回传",
+          "w": 92,
+          "x": 348,
+          "y": 272
+        }
+      },
+      {
+        "d": "M 218 214 L 164 214 Q 154 214 154 224 L 154 302",
+        "id": "edge-loop-verify",
+        "pill": {
+          "text": "独立上下文送审",
+          "w": 90,
+          "x": 62,
+          "y": 248
+        }
+      },
+      {
+        "d": "M 272 358 L 404 358",
+        "id": "edge-verify-sandbox",
+        "pill": {
+          "text": "属性/差分锚点",
+          "w": 88,
+          "x": 294,
+          "y": 347
+        }
+      }
+    ],
+    "id": "d-claude-vs-openai-harness",
+    "level": "L3",
+    "lifecycle": "active",
+    "nodes": [
+      {
+        "badge": "入口层 · 成本与命中率命门",
+        "example": "OpenAI Codex 强调 Exact Prefix Match；Anthropic 将高阶系统提示词经渐进式披露缩减 80%+，双双把顶层文档控制在极简目录。",
+        "h": 72,
+        "id": "node-prefix",
+        "label": "静态前缀冻结区",
+        "redline": "设计红线：动态增删头部工具会瞬间击穿全量 Prompt Cache，导致延迟与成本成倍飙升；动态信息必须严格追加在消息尾部。",
+        "rx": 18,
+        "sub": "CLAUDE.md / AGENTS.md <=100行",
+        "sub2": "Exact Prefix Match · Prompt Cache",
+        "summary": "将系统提示词、仓库顶层索引（<=100 行）与工具定义按确定性字典序冻结在请求头部，绝不在头部塞入时间戳或中途动态改动工具排序。",
+        "title": "静态前缀冻结区（Prompt Caching & 极简目录）",
+        "w": 236,
+        "x": 36,
+        "y": 28
+      },
+      {
+        "badge": "工具层 · 打破 30~50 工具拐点",
+        "example": "Anthropic 实测通过文件系统按需发现 MCP 工具 + 代码变量内过滤数据，最高削减 98.7% Token 消耗。",
+        "h": 72,
+        "id": "node-mcp",
+        "label": "MCP 代码执行层",
+        "redline": "设计红线：警惕 30~50 个工具定义的选择退化拐点；敏感 PII 数据在代码层脱敏令牌化，不裸露进模型上下文。",
+        "rx": 18,
+        "sub": "Progressive Disclosure · 按需加载",
+        "sub2": "代码组合调用 · 省 98.7% Token",
+        "summary": "不再把上百个 MCP JSON Schema 预载进上下文，也不把海量返回 JSON 回灌模型；改为按需读取 SDK 定义并编写脚本在沙箱内过滤聚合。",
+        "title": "MCP 代码执行与渐进式工具发现（Code Execution with MCP）",
+        "w": 236,
+        "x": 408,
+        "y": 28
+      },
+      {
+        "badge": "控制中枢 · Humans Steer, Agents Execute",
+        "example": "Anthropic 折叠多 Agent 为单主循环后提速约 2 倍；OpenAI Codex 刻意不依赖 previous_response_id 以支持 ZDR 与多端点无缝切换。",
+        "h": 86,
+        "id": "node-loop",
+        "kind": "engine",
+        "label": "Agent 核心循环",
+        "redline": "设计红线：禁止按“部门组织架构”盲目拆分串行多 Agent，避免“总结的总结”带来的上下文失真与延迟倍增。",
+        "rx": 22,
+        "sub": "单主循环 / Stateless Responses",
+        "sub2": "reasoning.effort 分层路由",
+        "summary": "默认一核一环（单主模型 + 开放式工具循环），有明确上下文膨胀、真正并行或独立验真需求时才扇出 Subagent；客户端无状态管理历史以兼容 ZDR 合规。",
+        "title": "Agent 核心执行循环（Harness 控制权）",
+        "w": 244,
+        "x": 218,
+        "y": 156
+      },
+      {
+        "badge": "执行层 · 安全与长程续航",
+        "example": "Codex 适配 macOS/Linux/Windows 原生沙箱并调用 /responses/compact；Bun 迁移通过隔离 Worktree 彻底解决并发写覆盖。",
+        "h": 76,
+        "id": "node-sandbox",
+        "label": "OS 级隔离沙箱",
+        "redline": "设计红线：绝不用书面提示词替代权限控制；高危删改与外网访问必须在沙箱与 PreToolUse Hook 层硬拦截。",
+        "rx": 18,
+        "sub": "Git Worktree · 网络/权限代理",
+        "sub2": "Auto-Compaction 自动压缩",
+        "summary": "所有 Shell、文件修改与 MCP 脚本在 rootless 容器或 OS 沙箱中运行；并发写代码按分组隔离 Git Worktree；触及 auto_compact_limit 自动压缩历史。",
+        "title": "OS 级沙箱、Worktree 隔离与自动压缩",
+        "w": 236,
+        "x": 408,
+        "y": 306
+      },
+      {
+        "badge": "锚点层 · 杜绝 Reward Hacking",
+        "example": "Claude Code 将 REVIEW.md 与验证规则锁定在 Base Branch，禁止 PR 自身修改评判标准，并用 Fresh-Context Verifier 防自我确认偏差。",
+        "h": 76,
+        "id": "node-verify",
+        "label": "基线锁定验证栈",
+        "redline": "设计红线：单次跑通不代表可靠，必须多轮运行测量 pass@k / pass^k，并把测试套件挂载为只读不可变锚点。",
+        "rx": 18,
+        "sub": "E2E · 属性测试 · 差分测试",
+        "sub2": "Fresh Verifier · pass@k / pass^k",
+        "summary": "评估最终产物（Outcome）而非死盯轨迹；组合代码评分器 + LLM-as-a-Judge + 人工校准，并用属性/差分测试生成海量边界输入。",
+        "title": "独立上下文验证与不可变评测锚点",
+        "w": 236,
+        "x": 36,
+        "y": 306
+      }
+    ],
+    "source_title": "Anthropic & OpenAI 官方工程分享综合架构图",
+    "source_url": "https://openai.com/index/unrolling-the-codex-agent-loop/",
+    "stages": [
+      {
+        "active_edges": [
+          "edge-prefix-loop"
+        ],
+        "active_nodes": [
+          "node-prefix",
+          "node-loop"
+        ],
+        "case_study": "OpenAI Codex 通过稳定静态前缀大幅降低 TTFT 延迟与多轮成本；Anthropic 渐进式披露缩减 80%+ 系统提示词。",
+        "desc": "请求启动时加载极简目录级 CLAUDE.md / AGENTS.md（<=100 行）与固定排序的工具前缀，确保连续多轮推理 100% 命中服务端 Prompt Cache。",
+        "engineering_point": "严禁在前缀头部插入动态时间戳或中途重排工具列表，所有动态信息追加在消息尾部。",
+        "title": "静态前缀冻结与缓存命中"
+      },
+      {
+        "active_edges": [
+          "edge-loop-mcp"
+        ],
+        "active_nodes": [
+          "node-loop",
+          "node-mcp"
+        ],
+        "case_study": "Anthropic《Code Execution with MCP》在复杂多工具链路中实测最高节省 98.7% Token。",
+        "desc": "当核心循环需要访问外部系统时，通过文件系统目录或 Tool Search 按需加载工具定义，生成组合脚本而非逐条自然语言调工具。",
+        "engineering_point": "打破 30~50 个工具的选择退化拐点，避免数百个 JSON Schema 塞爆上下文。",
+        "title": "MCP 按需发现与代码化调用"
+      },
+      {
+        "active_edges": [
+          "edge-mcp-sandbox"
+        ],
+        "active_nodes": [
+          "node-mcp",
+          "node-sandbox"
+        ],
+        "case_study": "Codex 结合 OS 原生沙箱与网络代理隔离风险；Bun 迁移以 Worktree 彻底消除并发写竞态。",
+        "desc": "生成的代码与 Shell 命令在 OS 级沙箱和独立 Git Worktree 中运行，海量原始 JSON 与敏感 PII 在沙箱变量内完成过滤脱敏。",
+        "engineering_point": "只向模型返回精炼后的摘要回执与结构化错误流，杜绝原始大日志污染上下文。",
+        "title": "沙箱内数据过滤与隔离执行"
+      },
+      {
+        "active_edges": [
+          "edge-sandbox-loop"
+        ],
+        "active_nodes": [
+          "node-sandbox",
+          "node-loop"
+        ],
+        "case_study": "Codex CLI 通过 /responses/compact 支撑数百轮工具调用不溢出，同时保持无状态 API 兼容 ZDR。",
+        "desc": "沙箱执行结果作为 Observation 回传主循环驱动自我修正；当多轮对话逼近 auto_compact_limit 阈值时触发自动 Compaction 维持长程状态。",
+        "engineering_point": "核心架构红线靠顶层配置常驻保护，任务进度落盘到磁盘文件对抗压缩失忆。",
+        "title": "观测回传与自动压缩续航"
+      },
+      {
+        "active_edges": [
+          "edge-loop-verify",
+          "edge-verify-sandbox"
+        ],
+        "active_nodes": [
+          "node-loop",
+          "node-verify",
+          "node-sandbox"
+        ],
+        "case_study": "Claude Code 团队在 90% 代码由 AI 编写的环境下，靠锁定 Base Branch REVIEW.md + 属性/差分测试守住生产质量。",
+        "desc": "产物送入独立干净上下文的 Verifier，并结合主干锁定的只读 E2E、属性测试与差分测试套件完成最终放行，严防 Reward Hacking。",
+        "engineering_point": "验收 Outcome（最终状态）而非 Trajectory（固定过程），并用 pass@k / pass^k 衡量稳定性。",
+        "title": "基线锁定验证栈与硬锚点裁决"
+      }
+    ],
+    "sub_tags": [
+      "Prompt Cache 与压缩",
+      "MCP 与 ACI 工具设计",
+      "Evals 与多层验证栈"
+    ],
+    "subtitle": "融合 Anthropic（MCP 代码执行 + 多层验证栈）与 OpenAI（Harness 护栏 + 精确前缀缓存 + 自动压缩）的生产级闭环对照",
+    "title": "Claude Code vs OpenAI Codex：Agent Harness、MCP 代码执行与 Prompt Cache 闭环",
+    "topic": "Agent 编排与工作流",
+    "vendor": "Anthropic / Claude",
+    "vendor_id": "anthropic",
+    "viewBox": "0 0 680 416",
+    "week_key": "2026-W48"
+  },
+  {
+    "date": "",
+    "edges": [
+      {
+        "d": "M 276 62 L 400 62",
+        "id": "edge-gw-rag",
+        "pill": {
+          "text": "鉴权与安全放行",
+          "w": 92,
+          "x": 294,
+          "y": 32
+        }
+      },
+      {
+        "d": "M 150 100 L 150 176 Q 150 186 160 186 L 192 186",
+        "id": "edge-gw-router",
+        "pill": {
+          "text": "长上下文直通(<200K)",
+          "w": 116,
+          "x": 92,
+          "y": 126
+        }
+      },
+      {
+        "d": "M 530 100 L 530 186 Q 530 196 520 196 L 488 196",
+        "id": "edge-rag-router",
+        "pill": {
+          "text": "精排证据+缓存",
+          "w": 100,
+          "x": 480,
+          "y": 126
+        }
+      },
+      {
+        "d": "M 196 226 L 160 226 Q 150 226 150 236 L 150 316",
+        "id": "edge-router-fallback",
+        "pill": {
+          "text": "429/超时降级",
+          "w": 104,
+          "x": 98,
+          "y": 266
+        }
+      },
+      {
+        "d": "M 444 252 L 444 316",
+        "id": "edge-router-obs",
+        "pill": {
+          "text": "引文校验与打点",
+          "w": 104,
+          "x": 392,
+          "y": 274
+        }
+      },
+      {
+        "d": "M 276 360 L 400 360",
+        "id": "edge-fallback-obs",
+        "pill": {
+          "text": "兜底回执与告警",
+          "w": 96,
+          "x": 292,
+          "y": 330
+        }
+      },
+      {
+        "d": "M 608 320 L 608 236 Q 608 226 598 226 L 488 226",
+        "id": "edge-obs-router",
+        "pill": {
+          "text": "成本/延迟反馈调优",
+          "w": 116,
+          "x": 548,
+          "y": 266
+        }
+      }
+    ],
+    "id": "d-enterprise-rag-agent-production-loop",
+    "level": "L3",
+    "lifecycle": "active",
+    "nodes": [
+      {
+        "badge": "入口防线 · 零密钥暴露与合规",
+        "example": "OpenAI 与 Google Cloud 均要求禁止客户端直连 API，分离 staging/production 隔离项目，并用 CMEK 密钥与数据零训练承诺满足金融政务合规。",
+        "h": 76,
+        "id": "node-gateway",
+        "label": "1. 安全接入与护栏网关",
+        "redline": "设计红线：绝不在前端暴露 API Key，绝不把高危写权限或租户配额控制寄托在 System Prompt 软约束上。",
+        "rx": 18,
+        "sub": "VPC / IAM / Model Armor",
+        "sub2": "Prompt Injection 拦截 · 租户配额",
+        "summary": "所有大模型调用经由后端安全网关代理，在私有网络（VPC Service Controls / Private Service Connect）内完成 IAM 鉴权、租户级配额熔断与 Model Armor 输入防护。",
+        "title": "安全接入、权限隔离与 AI 护栏网关",
+        "w": 252,
+        "x": 24,
+        "y": 24
+      },
+      {
+        "badge": "证据召回层 · 反孤立切片失血",
+        "example": "Anthropic 实测 Contextual Embeddings + BM25 使 Top-20 检索失败率降 49%，叠加 Rerank 累计降 67%；Google Cloud 推荐 PoC 用 pgvector、高并发切 AlloyDB AI / Vector Search。",
+        "h": 76,
+        "id": "node-rag",
+        "label": "2. 混合检索与精排层",
+        "redline": "设计红线：知识库 <200K Tokens 且稳定时优先直连长上下文+缓存；切忌无差别强制开启联网搜索或对冷向量索引不做生命周期清理。",
+        "rx": 18,
+        "sub": "Contextual Embeddings + BM25",
+        "sub2": "Rerank(-67%失败) · 动态联网接地",
+        "summary": "入库前为切片前置 50~100 Token 文档语境前缀，同时构建向量 + BM25 混合索引，宽召回后经 Cross-Encoder 精排截断 Top-K；实时外部事实按动态检索阈值触发 Google Search Grounding。",
+        "title": "Contextual Hybrid RAG、交叉精排与动态接地",
+        "w": 252,
+        "x": 404,
+        "y": 24
+      },
+      {
+        "badge": "核心中枢 · 确定性编排与单位经济学",
+        "example": "Gemini 2.5/3/4 隐式缓存享 90%~95% 输入折扣且零存储费（门槛 2,048/4,096 Tokens）；OpenAI Batch API 提供 50% 折扣且可叠加 Prompt Caching。",
+        "h": 86,
+        "id": "node-router",
+        "kind": "engine",
+        "label": "3. 编排与模型路由中枢",
+        "redline": "设计红线：严格遵循“静态前缀在前、动态内容在尾”，控制 max_tokens 与 LoopAgent 最大迭代次数，防共享窗口截断与死循环烧钱。",
+        "rx": 22,
+        "sub": "ADK Workflow · SLM/旗舰分级路由",
+        "sub2": "Implicit Caching(90~95%) · Batch(-50%)",
+        "summary": "用确定性工作流（Sequential / Parallel / LoopAgent + 回调护栏）替代巨型单体 Prompt，按复杂度将简单分类/抽取路由至 SLM/轻量模型，静态前缀前置吃满隐式缓存，非实时任务切入 Batch API。",
+        "title": "确定性工作流编排、分级路由与成本杠杆中枢",
+        "w": 288,
+        "x": 196,
+        "y": 166
+      },
+      {
+        "badge": "高可用防线 · 消除单点雪崩",
+        "example": "当旗舰推理模型出现延迟飙升或持续 TPM 429 时，网关自动降级至 Mini/Flash 型号维持核心对话不中断，并配合 stream:true 保底体感 TTFT。",
+        "h": 80,
+        "id": "node-fallback",
+        "label": "4. 弹性重试与多级降级",
+        "redline": "设计红线：严禁对所有错误一刀切无限重试，严禁无 Jitter 同步重试引发雪崩，单模型单端点严禁无降级直面生产流量。",
+        "rx": 18,
+        "sub": "429 Retry-After + Backoff Jitter",
+        "sub2": "旗舰→轻量级联 Fallback · 优雅兜底",
+        "summary": "严格区分可重试瞬态错误（429/5xx）与不可重试错误（400/401/账单触顶）；读取限流响应头并尊重 Retry-After，用有界指数退避+随机 Jitter 防惊群；持续异常时自动级联降级至轻量模型或缓存/异步队列。",
+        "title": "限流退避、错误隔离与多级优雅降级",
+        "w": 252,
+        "x": 24,
+        "y": 320
+      },
+      {
+        "badge": "可观测与 ROI 闭环 · 拒绝伪接地与盲算账",
+        "example": "双副本 H100 生产基线约 $6.5K~$7.5K/月，对比旗舰 API 约 8,000 万~1.5 亿 Tokens/月打平，但对比 Serverless 开源 API 需 100 亿~360 亿输出 Tokens/月才打平。",
+        "h": 80,
+        "id": "node-obs",
+        "label": "5. 溯源核验与成本监控闭环",
+        "redline": "设计红线：高敏场景绝不裸透传无引用回答；咨询算账绝不按 GPU 100% 满载拍脑袋决策，必须持续监控成本异常与尾延迟反馈调优路由阈值。",
+        "rx": 18,
+        "sub": "groundingMetadata / Chunk 强制校验",
+        "sub2": "TTFT/p95 · Token/GPU TCO 实时告警",
+        "summary": "应用层程序化校验 groundingMetadata 或 RAG Chunk 引用，无依据时强制拒答；全量落盘 Input/Output Token、TTFT/p95、429 率与单次成本，按真实利用率（25%~40%）持续校准 API vs 自建 GPU TCO 边界。",
+        "title": "引用溯源后置门禁、全链路追踪与 TCO 反馈闭环",
+        "w": 252,
+        "x": 404,
+        "y": 320
+      }
+    ],
+    "source_title": "[Google Cloud 官方] 企业级 GenAI / RAG 生产架构与跨厂稳定性/成本监控闭环",
+    "source_url": "https://cloud.google.com/architecture/rag-capable-gen-ai-app-using-vertex-ai",
+    "stages": [
+      {
+        "active_edges": [
+          "edge-gw-rag",
+          "edge-gw-router"
+        ],
+        "active_nodes": [
+          "node-gateway",
+          "node-rag",
+          "node-router"
+        ],
+        "case_study": "Anthropic 与 Google 均建议在 <200K~1M 稳定静态语料场景优先长上下文+缓存，避免过早引入重型 RAG 运维负担。",
+        "desc": "请求首先进入后端安全网关，在私有 VPC 与 IAM 边界内完成租户配额核验与 Model Armor 注入拦截；随后按知识库体量智能分流——<200K 稳定文档直通长上下文缓存，超大规模或高频更新知识库进入混合 RAG 检索链路。",
+        "engineering_point": "严禁客户端直连模型 API；在网关入口完成安全护栏、环境隔离（staging/prod）与计费熔断。",
+        "title": "安全接入与规模边界分流"
+      },
+      {
+        "active_edges": [
+          "edge-rag-router"
+        ],
+        "active_nodes": [
+          "node-rag",
+          "node-router"
+        ],
+        "case_study": "Anthropic 评测显示 Contextual 混合检索降低 49% Top-20 失败率，叠加 Rerank 后累计降低 67%。",
+        "desc": "需要检索的请求并行查询 Contextual Embeddings 与 Contextual BM25 词法索引，先宽召回再经 Cross-Encoder 精排截断高相关 Chunk；涉及实时外部事实时依据动态检索得分阈值按需触发 Google Search Grounding。",
+        "engineering_point": "切片入库前前置 50~100 Token 文档级语境并用 Prompt Caching 压低离线索引成本，同时精细调优 top-k 压缩下游 TTFT。",
+        "title": "Contextual 混合检索与精排接地"
+      },
+      {
+        "active_edges": [
+          "edge-rag-router",
+          "edge-gw-router"
+        ],
+        "active_nodes": [
+          "node-router"
+        ],
+        "case_study": "Gemini 4 隐式缓存达到 4,096 Token 门槛即可免存储费享 95% 折扣；OpenAI Batch API 可叠加 Prompt Caching 双重降本。",
+        "desc": "中枢按 ADK 范式以 Sequential / Parallel / LoopAgent 固化控制流与回调护栏，并实施模型分级路由（SLM 处理分类抽取、旗舰模型处理复杂推理）；静态指令与文档前置吃满 90%~95% 隐式缓存，离线任务转 Batch 享 50% 折扣。",
+        "engineering_point": "保持前缀字节级稳定不插动态时间戳，规划 Input/Thinking/Output 共享预算并设死 max_tokens 与循环上限。",
+        "title": "确定性编排与成本杠杆路由"
+      },
+      {
+        "active_edges": [
+          "edge-router-fallback",
+          "edge-fallback-obs"
+        ],
+        "active_nodes": [
+          "node-router",
+          "node-fallback",
+          "node-obs"
+        ],
+        "case_study": "OpenAI 生产最佳实践将“限流头解析 + 级联模型 Fallback + 优雅 UI 降级”列为消除单点故障的三大铁律。",
+        "desc": "面对高并发 429 RPM/TPM 限流或上游延迟抖动，网关隔离不可重试错误（400/401 立即失败），对瞬态故障执行 Retry-After + 有界指数退避随机 Jitter；若主模型持续不可用，自动级联降级至轻量模型或缓存/异步队列。",
+        "engineering_point": "通过随机 Jitter 防止惊群雪崩，配合流式输出（stream:true）与 Predicted Outputs 守住用户体感 TTFT。",
+        "title": "限流退避与多级优雅降级"
+      },
+      {
+        "active_edges": [
+          "edge-router-obs",
+          "edge-obs-router"
+        ],
+        "active_nodes": [
+          "node-router",
+          "node-obs"
+        ],
+        "case_study": "生产双卡 H100 月 TCO 约 $6.5K~$7.5K，仅在月耗超 8,000 万~1.5 亿旗舰 API Token 或强合规场景才优于托管 API。",
+        "desc": "响应输出前由应用层强制校验 groundingMetadata 或 RAG Chunk 引用，缺失证据即触发拒答；同时结构化上报 TTFT/p95、Token 消耗与 429 率，结合真实利用率（25%~40%）持续校准 API vs 自建 GPU TCO 并反哺路由阈值。",
+        "engineering_point": "以确定性后置校验杜绝“伪接地”幻觉，用 Cloud Trace 与成本异常告警形成持续优化闭环。",
+        "title": "溯源门禁与 TCO/延迟闭环调优"
+      }
+    ],
+    "sub_tags": [
+      "线上稳定性与降级风控",
+      "工业 RAG 与混合检索",
+      "多 Agent 与图编排"
+    ],
+    "subtitle": "融合 Google Cloud / Gemini（Context Caching · ADK · Grounding）、Anthropic（Contextual Hybrid RAG）与 OpenAI（限流退避 · 级联降级 · Batch）的全链路生产闭环",
+    "title": "企业级 RAG + Agent 生产架构与降级/成本监控闭环",
+    "topic": "RAG 与上下文工程",
+    "vendor": "Google / Gemini",
+    "vendor_id": "google",
+    "viewBox": "0 0 680 420",
+    "week_key": "2026-W48"
+  }
+]

@@ -1,0 +1,38 @@
+name: 内容投稿推荐（Content Submission）
+description: 推荐高质量的一手 AI 工程博客、官方文档或实战避坑案例
+title: "[投稿] "
+labels: ["content-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢推荐优质前沿 AI 资料！请填写下方信息，审核整理后将收录至知识库与每周周报。
+  - type: input
+    id: source_url
+    attributes:
+      label: 原文链接
+      description: 请提供可公开访问的一手文章、官方文档或技术博客 URL
+      placeholder: https://example.com/engineering/article
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 推荐理由
+      description: 这篇资料最值得沉淀的工程实践、架构权衡、量化结论或避坑要点是什么？
+      placeholder: 例如：给出了工业级混合检索 + 精排的量化对比数据，以及长上下文与检索方案的选型边界...
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 建议分类
+      description: 请选择最适合沉淀的资产类型
+      options:
+        - 行业场景题库（工程落地 / 咨询方案）
+        - 结构化提示词模板
+        - 生产落地避坑指南
+        - 交互式架构图解
+        - 综合（多类均适用）
+    validations:
+      required: true
